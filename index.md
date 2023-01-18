@@ -31,7 +31,7 @@ exercises, homeworks, and projects are shared via the course
 <a class="external" target="_blank" href="https://github.com/jhu-ip/cs220-summer22-public">public repository</a>.
 You may never share your private repository with anyone else.
 
-<a class="external" target="_blank" href="https://piazza.com/jhu/summer2022/en601220/home">Piazza</a> is
+<a class="external" target="_blank" href="https://piazza.com/jhu/spring2023/en601220/home">Piazza</a> is
 the main communication channel. If you have any questions or concerns,
 post on Piazza. You can do either public or private posts (anonymously
 if you want!). If others could potentially benefit from your question,
