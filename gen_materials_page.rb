@@ -190,7 +190,9 @@ end
 # Map of week numbers to Week objects
 weeks = {}
 
-CSV.foreach('material.csv') do |row|
+input_filename = ARGV.length == 0 ? 'material.csv' : ARGV[0]
+
+CSV.foreach(input_filename) do |row|
   if row.length == 6 && row[0] != 'Week'
     week_num = row[0].to_i
     day = row[1].to_i
