@@ -46,4 +46,4 @@ to the course Gradescope in the first week.
 
 ## News
 
-* **Jan 23** — Welcome!
+* **Jan 23** — Welcome! [Homework 0](assign/hw0.html) is due **Friday, Feb 3rd** by 11pm.

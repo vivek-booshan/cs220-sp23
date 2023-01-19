@@ -50,7 +50,10 @@ In your private git repository (created for you on Github under jhu-ip organizat
 <div class='admonition tip'>
 <div class='title'>Tip</div>
 <div class='content'>
-<p>The files you create can be copies of <em>hello_world.c</em> from <a href="/docs/exercises/ex1-2">Exercise 1-2</a> with very small modifications.</p>
+<p>
+  The "hello, world" program that was the starting point for <a href="../exercise/ex02.html">Exercise 2</a> could be a useful
+starting point for the source files for this homework.
+</p>
 </div>
 </div>
 
