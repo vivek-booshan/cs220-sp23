@@ -41,7 +41,7 @@ import remarkMath from 'remark-math'
 <div class='admonition caution'>
 <div class='title'>Caution</div>
 <div class='content'>
-<p>You should receive an invitation to the jhu-ip organization and your private repository by <strong>Thursday, January 276h</strong>. If you haven't received it, post privately for all instructors on Piazza.</p>
+<p>You should receive an invitation to the jhu-ip organization and your private repository by <strong>Thursday, January 26th</strong>. If you haven't received it, post privately for all instructors on Piazza.</p>
 </div>
 </div>
 
