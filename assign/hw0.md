@@ -51,7 +51,7 @@ In your private git repository (created for you on Github under jhu-ip organizat
 <div class='title'>Tip</div>
 <div class='content'>
 <p>
-  The "hello, world" program that was the starting point for <a href="../exercise/ex02.html">Exercise 2</a> could be a useful
+  The "hello, world" program that was the starting point for <a href="../exercise/ex03b.html">Exercise 3-B</a> could be a useful
 starting point for the source files for this homework.
 </p>
 </div>
