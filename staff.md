@@ -38,8 +38,6 @@ category: "staff"
 
 ## Head Course Assistants
 
-*Coming soon!*
-
 <!--
 <div class="card_container">
 
