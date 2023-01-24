@@ -157,7 +157,7 @@ See the [CA office hours](officehours.html) page for the CA office hours schedul
 </div>
 
 <div class="card">
-  <img alt="Elaine photo" src="{{site.baseurl}}/img/staffpix/placeholder.jpg">
+  <img alt="Elaine photo" src="{{site.baseurl}}/img/staffpix/elaine.jpg">
   <div class="details">
    <span class="name_and_role">Elaine Zhao</span><br>
    Email: <a href="mailto:dzhao24@jhu.edu">dzhao24@jhu.edu</a><br>
