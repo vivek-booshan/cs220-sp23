@@ -165,7 +165,7 @@ See the [CA office hours](officehours.html) page for the CA office hours schedul
 </div>
 
 <div class="card">
-  <img alt="Katharine Durbin" src="{{site.baseurl}}/img/staffpix/placeholder.jpg">
+  <img alt="Katharine Durbin" src="{{site.baseurl}}/img/staffpix/katharine.JPG">
   <div class="details">
    <span class="name_and_role">Katharine Durbin</span><br>
    Email: <a href="mailto:kdurbin1@jhu.edu">kdurbin1@jhu.edu</a><br>
