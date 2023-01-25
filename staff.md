@@ -204,6 +204,14 @@ See the [CA office hours](officehours.html) page for the CA office hours schedul
   </div>
 </div>
 
+<div class="card">
+  <img alt="Ashley photo" src="{{site.baseurl}}/img/staffpix/placeholder.jpg">
+  <div class="details">
+   <span class="name_and_role">Ashley Liu</span><br>
+   Email: <a href="mailto:yliu443@jhu.edu">yliu443@jhu.edu</a><br>
+  </div>
+</div>
+
 </div>
 <!--
 <div class="card_container">
