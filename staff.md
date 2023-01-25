@@ -189,7 +189,7 @@ See the [CA office hours](officehours.html) page for the CA office hours schedul
 </div>
 
 <div class="card">
-  <img alt="Emily photo" src="{{site.baseurl}}/img/staffpix/placeholder.jpg">
+  <img alt="Emily photo" src="{{site.baseurl}}/img/staffpix/emily.jpeg">
   <div class="details">
    <span class="name_and_role">Emily Guan</span><br>
    Email: <a href="mailto:eguan2@jhu.edu">eguan2@jhu.edu</a><br>
