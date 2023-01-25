@@ -72,7 +72,7 @@ Now, copy a file from your local copy of the class repo into the directory you j
 
 1.	Copy `hello_world.c` from your local copy of the class repository into your personal folder by navigating into `~/temp` (the folder you just created) using `cd temp` and then typing (Hint: using tab-completion will help here!): 
 ```bash
-cp ~/cs220-sp23-public/exercises/ex02/hello_world.c .
+cp ~/cs220-sp23-public/exercises/ex03b/hello_world.c .
 ```
 The command above ends with a period ("dot"), and there must be a space before the dot. The dot in Unix stands for the current directory; in this command you’re expressing that the current directory is the destination for the copy you’re making.
  
