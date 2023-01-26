@@ -147,24 +147,27 @@ Prepare your files as if you were asked to submit them to Gradescope for a homew
 **5.**	Check to make sure your _.zip_ file contains the right files with `unzip -l` (this says to list the files that would come out if you were to unzip the bundle) as indicated below: `unzip -l ex03.zip`. This will cause a list of the files and directories in your zip file to be displayed on the screen.  It is your chance to double-check that you have included everything.  If you wanted to actually unzip your bundled files (though you do not need to do so now), you could use the unzip command as above, but without the `-l` flag.  You will often want to unzip your file in a folder which is different than the one where you created it, to avoid overwriting your original _README_ and _gitlog.txt_ files.
 
 **6.**	Now that all required files are bundled together as one _.zip_ file, you will need to copy the bundle from ugrad to your local machine. Our tools for accomplishing this will be `scp` (Mac or Linux or Windows Powershell), or either `pscp` or `WinSCP` if installed on Windows.
-	<div class='admonition info'>
-	<div class='title'>Mac or Linux Users</div>
-	<div class='content'>
-	<p>In a terminal on your local computer, copy your <em>.zip</em> file from ugrad to your local computer using <code>scp &lt;source&gt; &lt;destination&gt;</code>. For example, if you are a user named <em>ips21004</em> connected to ugradx using a Mac, open a new Terminal window on your Mac (not the one in which you are connected to ugradx!), navigate to the folder into which you want the file to be copied and type: <code>scp css22004@ugradx.cs.jhu.edu:ex03.zip .</code>. The source argument above first indicates in what account and on what machine you want to look, then, after the colon, it indicates a relative path from your home directory. The destination argument, however, is simply a dot, because you are typing this command on your Mac and want the file to be transferred to the folder on your Mac that you are currently working in. So, there is no need to specify the destination machine; it is the local one by default.</p>
-	</div>
-	</div>
-	<div class='admonition caution'>
-	<div class='title'>Tip</div>
-	<div class='content'>
-	<p>Do not try to type a <em>./</em> after the colon to start the relative path name, or a <em>~/</em> to indicate an absolute path name; <code>scp</code> will not understand that notation.</p>
-	</div>
-	</div>
-	<div class='admonition info'>
-	<div class='title'>Windows Users</div>
-	<div class='content'>
-	<p>You will need <code>pscp</code> here which should have been installed already automatically when you installed Putty. Copy your <em>.zip</em> file from ugrad to your local computer using <code>pscp &lt;source&gt; &lt;destination&gt;</code>. For example, you could open a Command Prompt window or Powershell and type <code>pscp css22006@ugradx.cs.jhu.edu:2023-spring-student-JHED/ex03.zip .</code>. For Windows where WinSCP has been installed: connect to ugradx using the WinSCP interface and drag the <em>ex03.zip</em> file from the ugradx side to your local computer's side.</p>
-	</div>
-	</div>
+
+<div class='admonition info'>
+<div class='title'>Mac or Linux Users</div>
+<div class='content'>
+<p>In a terminal on your local computer, copy your <em>.zip</em> file from ugrad to your local computer using <code>scp &lt;source&gt; &lt;destination&gt;</code>. For example, if you are a user named <em>ips21004</em> connected to ugradx using a Mac, open a new Terminal window on your Mac (not the one in which you are connected to ugradx!), navigate to the folder into which you want the file to be copied and type: <code>scp css22004@ugradx.cs.jhu.edu:ex03.zip .</code>. The source argument above first indicates in what account and on what machine you want to look, then, after the colon, it indicates a relative path from your home directory. The destination argument, however, is simply a dot, because you are typing this command on your Mac and want the file to be transferred to the folder on your Mac that you are currently working in. So, there is no need to specify the destination machine; it is the local one by default.</p>
+</div>
+</div>
+
+<div class='admonition caution'>
+<div class='title'>Tip</div>
+<div class='content'>
+<p>Do not try to type a <em>./</em> after the colon to start the relative path name, or a <em>~/</em> to indicate an absolute path name; <code>scp</code> will not understand that notation.</p>
+</div>
+</div>
+
+<div class='admonition info'>
+<div class='title'>Windows Users</div>
+<div class='content'>
+<p>You will need <code>pscp</code> here which should have been installed already automatically when you installed Putty. Copy your <em>.zip</em> file from ugrad to your local computer using <code>pscp &lt;source&gt; &lt;destination&gt;</code>. For example, you could open a Command Prompt window or Powershell and type <code>pscp css22006@ugradx.cs.jhu.edu:2023-spring-student-JHED/ex03.zip .</code>. For Windows where WinSCP has been installed: connect to ugradx using the WinSCP interface and drag the <em>ex03.zip</em> file from the ugradx side to your local computer's side.</p>
+</div>
+</div>
 
 **7.**	If you wanted to submit this on Gradescope (which we are not actually doing today), you now have a copy of your _.zip_ file on your local computer, and could launch a web browser that will allow you to select the file you wish to upload to Gradescope.
 
