@@ -62,9 +62,9 @@ the materials for that week.
     </tr>
     <tr>
       <td>Lecture<br>Slides</td>
-      <td><a href='slides/sec01/sp23_day01_sec03.pdf'>Day 01 notes (Sec 03)</a><br><a href='slides/sec01/sp23_day01_sec04.pdf'>Day 01 notes (Sec 04)</a></td>
-      <td><a href='slides/sec01/sp23_day02_sec03.pdf'>Day 02 notes (Sec 03)</a><br><a href='slides/sec01/sp23_day02_sec04.pdf'>Day 02 notes (Sec 04)</a></td>
-      <td></td>
+      <td><a href='slides/notes/sp23_day01_sec03.pdf'>Day 01 notes (Sec 03)</a><br><a href='slides/notes/sp23_day01_sec04.pdf'>Day 01 notes (Sec 04)</a></td>
+      <td><a href='slides/notes/sp23_day02_sec03.pdf'>Day 02 notes (Sec 03)</a><br><a href='slides/notes/sp23_day02_sec04.pdf'>Day 02 notes (Sec 04)</a></td>
+      <td><a href='slides/notes/sp23_day03_sec03.pdf'>Day 03 notes (Sec 03)</a><br><a href='slides/notes/sp23_day03_sec04.pdf'>Day 03 notes (Sec 04)</a></td>
     </tr>
     <tr>
       <td>Recorded<br>Sessions</td>
