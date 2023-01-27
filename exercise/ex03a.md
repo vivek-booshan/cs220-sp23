@@ -123,13 +123,15 @@ Create a file on ugrad and add it to the repository:
 **11.**	Edit your _README_ file, and within the file, add a line saying that this is your personal repository for Intermediate Programming at JHU for Spring 2023, and your section number.
 
 **12.**	Check the status again with `git status`, then commit your updated _README_ using `git commit -am "updated README"`. 
-	<div class='admonition info'>
-	<div class='title'>Info</div>
-	<div class='content'>
-	<p>The <code>-a</code> flag commits all changes to previously added files.</p>
-	</div>
-	</div>
-	Now, push your changes using `git push`. Finally, check your git log again to see how it has changed.  (That is, type the command `git log` to see what it reports.)
+
+<div class='admonition info'>
+<div class='title'>Info</div>
+<div class='content'>
+<p>The <code>-a</code> flag commits all changes to previously added files.</p>
+</div>
+</div>
+
+Now, push your changes using `git push`. Finally, check your git log again to see how it has changed.  (That is, type the command `git log` to see what it reports.)
 
 **13.**	In your web browser, investigate what has changed in the remote repo on github.com.
 
