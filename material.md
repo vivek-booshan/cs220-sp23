@@ -75,6 +75,63 @@ the materials for that week.
   </tbody>
 </table>
 </div>
+<button type="button" id="week_2_toggle" class="week_control_button">Week 2 (30-Jan to 3-Feb)</button>
+<div id="week_2" class="collapsible">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Day 4 (30-Jan)</th>
+      <th>Day 5 (1-Feb)</th>
+      <th>Day 6 (3-Feb)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Videos</td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45b14d44-3d4e-4fd7-b0c0-ae230027aef2'>Logical operators, control flow</a></td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=58f4d402-fd0d-4868-b805-ae230027ab93'>Arrays, ASCII</a><br><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06a4f1da-f6a1-4212-b686-ae230027ab33'>C strings</a></td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ae149930-15ce-460c-a2df-ae230027aac0'>File I/O, assert, math functions</a><br><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1de2958b-f8b8-4fae-ac47-ae230027aa77'>Writing functions, command line arguments</a></td>
+    </tr>
+    <tr>
+      <td>Slides</td>
+      <td><a href='slides/day04_control_flow.pdf'>Logical operators, control flow</a></td>
+      <td><a href='slides/day05_arrays.pdf'>Arrays</a><br><a href='slides/day05_c_strings.pdf'>C strings</a></td>
+      <td><a href='slides/day06_fileio_assertion_math.pdf'>File I/O, assert, math functions</a><br><a href='slides/day06_functions_command_line_arguments.pdf'>Writing functions, command line arguments</a></td>
+    </tr>
+    <tr>
+      <td>Recap<br>Questions</td>
+      <td><a href='questions/day04.html'>Day 4</a></td>
+      <td><a href='questions/day05.html'>Day 5</a></td>
+      <td><a href='questions/day06.html'>Day 6</a></td>
+    </tr>
+    <tr>
+      <td>Exercise</td>
+      <td><a href='exercise/ex04.html'>Exercise 4</a></td>
+      <td><a href='exercise/ex05.html'>Exercise 5</a></td>
+      <td><a href='exercise/ex06.html'>Exercise 6</a></td>
+    </tr>
+    <tr>
+      <td>Additional<br>Resources</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lecture<br>Slides</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recorded<br>Sessions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 <script type="text/javascript">
   // Create and register a click handler for button clicks to expand/contract
   // specified content div

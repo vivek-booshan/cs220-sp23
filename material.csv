@@ -33,3 +33,19 @@ Week,Day,Date,Type,Link text,URL
 1,3,27-Jan,Resource,Git cheatsheet,https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
 1,3,27-Jan,LectureSlides,"Day 03 notes (Sec 03)",slides/notes/sp23_day03_sec03.pdf
 1,3,27-Jan,LectureSlides,"Day 03 notes (Sec 04)",slides/notes/sp23_day03_sec04.pdf
+2,1,30-Jan,Video,"Logical operators, control flow",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45b14d44-3d4e-4fd7-b0c0-ae230027aef2
+2,1,30-Jan,Slides,"Logical operators, control flow",slides/day04_control_flow.pdf
+2,1,30-Jan,Recap,Day 4,questions/day04.html
+2,1,30-Jan,Exercise,Exercise 4,exercise/ex04.html
+2,2,1-Feb,Video,"Arrays, ASCII",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=58f4d402-fd0d-4868-b805-ae230027ab93
+2,2,1-Feb,Video,C strings,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06a4f1da-f6a1-4212-b686-ae230027ab33
+2,2,1-Feb,Slides,Arrays,slides/day05_arrays.pdf
+2,2,1-Feb,Slides,C strings,slides/day05_c_strings.pdf
+2,2,1-Feb,Recap,Day 5,questions/day05.html
+2,2,1-Feb,Exercise,Exercise 5,exercise/ex05.html
+2,3,3-Feb,Video,"File I/O, assert, math functions",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ae149930-15ce-460c-a2df-ae230027aac0
+2,3,3-Feb,Video,"Writing functions, command line arguments",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1de2958b-f8b8-4fae-ac47-ae230027aa77
+2,3,3-Feb,Slides,"File I/O, assert, math functions",slides/day06_fileio_assertion_math.pdf
+2,3,3-Feb,Slides,"Writing functions, command line arguments",slides/day06_functions_command_line_arguments.pdf
+2,3,3-Feb,Recap,Day 6,questions/day06.html
+2,3,3-Feb,Exercise,Exercise 6,exercise/ex06.html
