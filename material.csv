@@ -37,6 +37,8 @@ Week,Day,Date,Type,Link text,URL
 2,1,30-Jan,Slides,"Logical operators, control flow",slides/day04_control_flow.pdf
 2,1,30-Jan,Recap,Day 4,questions/day04.html
 2,1,30-Jan,Exercise,Exercise 4,exercise/ex04.html
+2,1,30-Jan,LectureSlides,"Day 04 Notes (Sec 03)",slides/notes/sp23_day04_sec03.pdf
+2,1,30-Jan,LectureSlides,"Day 04 Notes (Sec 04)",slides/notes/sp23_day04_sec04.pdf
 2,2,1-Feb,Video,"Arrays, ASCII",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=58f4d402-fd0d-4868-b805-ae230027ab93
 2,2,1-Feb,Video,C strings,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06a4f1da-f6a1-4212-b686-ae230027ab33
 2,2,1-Feb,Slides,Arrays,slides/day05_arrays.pdf
