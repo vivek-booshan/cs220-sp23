@@ -46,4 +46,9 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **Jan 31** — Two announcements:
+    1. The [CA office hours](officehours.html) schedule is available.
+    2. The Malone computer labs (Malone 122 and Malone G-61) will be unavailable
+       on **Saturday, Feb 25th**. However, the ugrad computers will still be available
+       for remote login via ssh.
 * **Jan 23** — Welcome! [Homework 0](assign/hw0.html) is due **Friday, Feb 3rd** by 11pm.
