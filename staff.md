@@ -133,7 +133,7 @@ See the [CA office hours](officehours.html) page for the CA office hours schedul
 </div>
 
 <div class="card">
-  <img alt="Amir photo" src="{{site.baseurl}}/img/staffpix/placeholder.jpg">
+  <img alt="Amir photo" src="{{site.baseurl}}/img/staffpix/amir.jpg">
   <div class="details">
    <span class="name_and_role">Amir Modaressanavi</span><br>
    Email: <a href="mailto:smodare1@jhu.edu">smodare1@jhu.edu</a><br>
