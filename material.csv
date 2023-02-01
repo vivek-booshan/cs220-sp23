@@ -45,6 +45,8 @@ Week,Day,Date,Type,Link text,URL
 2,2,1-Feb,Slides,C strings,slides/day05_c_strings.pdf
 2,2,1-Feb,Recap,Day 5,questions/day05.html
 2,2,1-Feb,Exercise,Exercise 5,exercise/ex05.html
+2,2,1-Feb,LectureSlides,"Day 05 Notes (Sec 03)",slides/notes/sp23_day05_sec03.pdf
+2,2,1-Feb,LectureSlides,"Day 05 Notes (Sec 04)",slides/notes/sp23_day05_sec04.pdf
 2,3,3-Feb,Video,"File I/O, assert, math functions",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ae149930-15ce-460c-a2df-ae230027aac0
 2,3,3-Feb,Video,"Writing functions, command line arguments",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1de2958b-f8b8-4fae-ac47-ae230027aa77
 2,3,3-Feb,Slides,"File I/O, assert, math functions",slides/day06_fileio_assertion_math.pdf

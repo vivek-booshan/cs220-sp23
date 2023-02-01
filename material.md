@@ -120,7 +120,7 @@ the materials for that week.
     <tr>
       <td>Lecture<br>Slides</td>
       <td><a href='slides/notes/sp23_day04_sec03.pdf'>Day 04 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day04_sec04.pdf'>Day 04 Notes (Sec 04)</a></td>
-      <td></td>
+      <td><a href='slides/notes/sp23_day05_sec03.pdf'>Day 05 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day05_sec04.pdf'>Day 05 Notes (Sec 04)</a></td>
       <td></td>
     </tr>
     <tr>
