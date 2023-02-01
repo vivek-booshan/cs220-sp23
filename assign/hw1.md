@@ -178,7 +178,7 @@ TODO (more examples)
 <div class='admonition tip'>
 <div class='title'>Tip</div>
 <div class='content'>
-<p>There may be other ways for the input expressions to be malformed,
+<p>There may be other ways for the input to be malformed,
 besides the ways shown above. You must be careful to check for all the
 various ways it might be malformed.</p>
 </div>
