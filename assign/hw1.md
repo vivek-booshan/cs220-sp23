@@ -98,6 +98,24 @@ text `Bye!` and then exits with the exit code 0.
 
 TODO: document error handling requirements
 
+### Hints and Specifications
+
+The program should allow the user to enter up to 20 coin denominations.
+You should use arrays to keep track of the identifiers for each type of
+coin and their face values. For example,
+
+```c
+char identifiers[MAX_DENOMINATIONS];
+int values[MAX_DENOMINATIONS];
+```
+
+You'll also want to have a variable indicating how many different types
+of coins there are, so that you know which elements of these arrays are
+used.
+
+It will also make sense to have an array keeping track of how many coins
+of each type are in the user's collection.
+
 ### Development Requirements
 
 In the homework folder of your private repository
