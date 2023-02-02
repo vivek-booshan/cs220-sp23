@@ -192,7 +192,7 @@ demonstrated below:
 Example 1
 
 <div class="highlighter-rouge"><pre>
-$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>gcc -std=c11 -pedantic -Wall -Wextra coins.c</b>
 $ <b>./a.out</b>
 How many denominations? <b>5</b>
 Enter coin identifier and value in cents: <b>p 1</b>
@@ -219,7 +219,7 @@ Bye!
 Example 2 (Canadian edition)
 
 <div class="highlighter-rouge"><pre>
-$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>gcc -std=c11 -pedantic -Wall -Wextra coins.c</b>
 $ <b>./a.out</b>
 How many denominations? <b>6</b>
 Enter coin identifier and value in cents: <b>p 1</b>
@@ -246,7 +246,7 @@ Bye!
 Example 3 (quitting using Control-D)
 
 <div class="highlighter-rouge"><pre>
-$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>gcc -std=c11 -pedantic -Wall -Wextra coins.c</b>
 $ <b>./a.out</b>
 How many denominations? <b>3</b>
 Enter coin identifier and value in cents: <b>A 1 </b>
@@ -266,7 +266,7 @@ Enter a command: <i>[...user types Control-D...]</i>Bye!
 Example 4 (user enters invalid number of denominations)
 
 <div class="highlighter-rouge"><pre>
-$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>gcc -std=c11 -pedantic -Wall -Wextra coins.c</b>
 $ <b>./a.out</b>
 How many denominations? <b>foobar</b>
 Invalid input
@@ -275,7 +275,7 @@ Invalid input
 Example 5 (user enters invalid input for coin identifier/value)
 
 <div class="highlighter-rouge"><pre>
-$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>gcc -std=c11 -pedantic -Wall -Wextra coins.c</b>
 $ <b>./a.out</b>
 How many denominations? <b>3</b>
 Enter coin identifier and value in cents: <b>p 1</b>
@@ -287,7 +287,7 @@ Invalid input
 Example 6 (invalid coin identifier)
 
 <div class="highlighter-rouge"><pre>
-$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>gcc -std=c11 -pedantic -Wall -Wextra coins.c</b>
 $ <b>./a.out</b>
 How many denominations? <b>2</b>
 Enter coin identifier and value in cents: <b>p 1</b>
@@ -306,7 +306,7 @@ Unknown coin identifier
 Example 7 (invalid command)
 
 <div class="highlighter-rouge"><pre>
-$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>gcc -std=c11 -pedantic -Wall -Wextra coins.c</b>
 $ <b>./a.out</b>
 How many denominations? <b>3</b>
 Enter coin identifier and value in cents: <b>A 1</b>
