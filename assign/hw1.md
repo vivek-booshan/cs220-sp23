@@ -335,7 +335,7 @@ various ways it might be malformed.</p>
 
 ### Submission
 
-Create a *.zip* file named *hw1.zip* which contains only **hw1.c**
+Create a *.zip* file named *hw1.zip* which contains only **coins.c**
 and **gitlog.txt**. (Do not zip your entire hw1 folder - only these two
 files.) Copy the *hw1.zip* file to your local machine and submit it as
 Homework 1 on Gradescope.
