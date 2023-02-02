@@ -44,6 +44,9 @@ When the program starts, it prompts the user to enter the number
 of different coin denominations that will be used ("`How many denominations?`"). Then,
 for each coin denomination, it prompts the user for a one-letter identifier
 and the value of the coin ("`Enter coin identifier and value in cents:`").
+Note that the coin identifiers are case-sensitive, so "`d`" and "`D`" are
+different identifiers.
+
 Once all of the coin identifiers and values
 are recorded, the program enters a command loop. Each time the
 program prompts the user to enter a command ("`Enter a command:`"),
@@ -96,7 +99,41 @@ text `Bye!` and then exits with the exit code 0.
 
 ### Error Handling
 
-TODO: document error handling requirements
+The program should handle errors as follows.
+
+If either
+
+* the user doesn't enter a valid value for the number of coin denominations when prompted, or
+* the user doesn't enter a valid identifier and value for a coin denomination when prompted, or
+* the user doesn't enter a valid identifier and count after an `a` or `r` command,
+
+then the program should print the line "`Invalid input`" to `stderr` and exit with the
+exit code 1.
+
+If the user enters a coin identifier as part of an `a` or `r` command that
+is not one of the identifiers entered by the user prior to the command loop,
+the program should print the line "`Unknown coin identifier`" to `stderr`
+and exit with the exit code 2. Note that the "`Unknown coin identifier`"
+should only be printed if the coin identifier and count were both
+read successfully.
+
+If the user enters a command character that is not one of `a`, `r`, `s`, or
+`q`, then the program should print the line "`Invalid command`" to `stderr`
+and exit with the exit code 3.
+
+If no errors occur and the program completes normally, it should exit with the
+exit code 0.
+
+Note that all of your code can be in a single `main` function, so a `return`
+statement will exit the program. E.g., the statement
+
+```c
+return 1;
+```
+
+will exit the program with the exit code 1. (In future assignments, we will
+expect you to write functions to modularize your program, but you don't need
+to use functions for this assignment.)
 
 ### Hints and Specifications
 
@@ -115,6 +152,12 @@ used.
 
 It will also make sense to have an array keeping track of how many coins
 of each type are in the user's collection.
+
+Make sure that your program consistently checks the return value of `scanf`
+so that it knows whether or not input was read successfully.
+
+Keep in mind that error messages should be printed to `stderr` and not
+`stdout`.
 
 ### Development Requirements
 
@@ -173,7 +216,113 @@ Enter a command: <b>q</b>
 Bye!
 </pre></div>
 
-TODO (more examples)
+Example 2 (Canadian edition)
+
+<div class="highlighter-rouge"><pre>
+$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>./a.out</b>
+How many denominations? <b>6</b>
+Enter coin identifier and value in cents: <b>p 1</b>
+Enter coin identifier and value in cents: <b>n 5</b>
+Enter coin identifier and value in cents: <b>d 10</b>
+Enter coin identifier and value in cents: <b>q 25</b>
+Enter coin identifier and value in cents: <b>D 100</b>
+Enter coin identifier and value in cents: <b>t 200</b>
+Enter a command: <b>a t 3</b>
+Enter a command: <b>a q 2</b>
+Enter a command: <b>s</b>
+Identifier,Face Value,Count,Total Value
+p,1,0,0
+n,5,0,0
+d,10,0,0
+q,25,2,50
+D,100,0,0
+t,200,3,600
+Overall value of collection: $6.50
+Enter a command: <b>q</b>
+Bye!
+</pre></div>
+
+Example 3 (quitting using Control-D)
+
+<div class="highlighter-rouge"><pre>
+$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>./a.out</b>
+How many denominations? <b>3</b>
+Enter coin identifier and value in cents: <b>A 1 </b>
+Enter coin identifier and value in cents: <b>B 13</b>
+Enter coin identifier and value in cents: <b>C 51</b>
+Enter a command: <b>a B 12</b>
+Enter a command: <b>a C 9</b>
+Enter a command: <b>s</b>
+Identifier,Face Value,Count,Total Value
+A,1,0,0
+B,13,12,156
+C,51,9,459
+Overall value of collection: $6.15
+Enter a command: <i>[...user types Control-D...]</i>Bye!
+</pre></div>
+
+Example 4 (user enters invalid number of denominations)
+
+<div class="highlighter-rouge"><pre>
+$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>./a.out</b>
+How many denominations? <b>foobar</b>
+Invalid input
+</pre></div>
+
+Example 5 (user enters invalid input for coin identifier/value)
+
+<div class="highlighter-rouge"><pre>
+$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>./a.out</b>
+How many denominations? <b>3</b>
+Enter coin identifier and value in cents: <b>p 1</b>
+Enter coin identifier and value in cents: <b>n 5</b>
+Enter coin identifier and value in cents: <b>d frotz</b> 
+Invalid input
+</pre></div>
+
+Example 6 (invalid coin identifier)
+
+<div class="highlighter-rouge"><pre>
+$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>./a.out</b>
+How many denominations? <b>2</b>
+Enter coin identifier and value in cents: <b>p 1</b>
+Enter coin identifier and value in cents: <b>n 5</b>
+Enter a command: <b>a p 211</b>
+Enter a command: <b>a n 19</b>
+Enter a command: <b>s</b>
+Identifier,Face Value,Count,Total Value
+p,1,211,211
+n,5,19,95
+Overall value of collection: $3.06
+Enter a command: <b>a Y 5</b>
+Unknown coin identifier
+</pre></div>
+
+Example 7 (invalid command)
+
+<div class="highlighter-rouge"><pre>
+$ <b>gcc -std=c99 -pedantic -Wall -Wextra coins.c</b>
+$ <b>./a.out</b>
+How many denominations? <b>3</b>
+Enter coin identifier and value in cents: <b>A 1</b>
+Enter coin identifier and value in cents: <b>B 17</b>
+Enter coin identifier and value in cents: <b>C 57</b>
+Enter a command: <b>a B 13</b>
+Enter a command: <b>r B 4</b>
+Enter a command: <b>s</b>
+Identifier,Face Value,Count,Total Value
+A,1,0,0
+B,17,9,153
+C,57,0,0
+Overall value of collection: $1.53
+Enter a command: <b>j</b>
+Invalid command
+</pre></div>
 
 <div class='admonition tip'>
 <div class='title'>Tip</div>
