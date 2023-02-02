@@ -8,10 +8,13 @@ This page lists assignments, projects, and exams. Note that it is possible that 
 of these dates could change. Any changes will be posted here, announced in class,
 and announced on [Piazza](https://piazza.com/jhu/spring2023/en601220/home).
 
+Unless mentioned otherwise, assignments and projects are due at 11pm (Baltimore time)
+on the due date.
+
 Assignment/Exam | Date
 --------------- | ----
 [Homework 0](assign/hw0.html) | Due Friday, Feb 3rd
-Homework 1 | Due Friday, Feb 10th
+[Homework 1](assign/hw1.html) | Due Friday, Feb 10th
 Homework 2 | Due Friday, Feb 17th<br>(no late submissions)
 Homework 3 | Due Friday, Feb 24th
 Homework 4 | Friday, Mar 3rd<br>(no late submissions)

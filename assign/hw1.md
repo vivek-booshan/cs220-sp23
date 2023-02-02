@@ -15,10 +15,6 @@ title: Homework 1
 </div>
 </div>
 
-<div style="font-size: 140%; font-style: italic;">
-  Note: this is a preliminary assignment description, and is not official yet.
-</div>
-
 ## Learning Objectives
 <div class='admonition success'>
 <div class='title'>Objectives</div>

@@ -46,6 +46,7 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **Feb 2** — [Homework 1](assign/hw1.html) is due **Friday, Feb 10th** by 11pm.
 * **Jan 31** — Two announcements:
     1. The [CA office hours](officehours.html) schedule is available.
     2. The Malone computer labs (Malone 122 and Malone G-61) will be unavailable
