@@ -55,3 +55,24 @@ Week,Day,Date,Type,Link text,URL
 2,3,3-Feb,Exercise,Exercise 6,exercise/ex06.html
 2,3,3-Feb,LectureSlides,"Day 06 Notes (Sec 03)",slides/notes/sp23_day06_sec03.pdf
 2,3,3-Feb,LectureSlides,"Day 06 Notes (Sec 04)",slides/notes/sp23_day06_sec04.pdf
+3,1,6-Feb,Slides,Function declarations,slides/day07_function_declaration.pdf
+3,1,6-Feb,Slides,Passing arrays to functions,slides/day07_passing_arrays_to_functions.pdf
+3,1,6-Feb,Slides,Recursion,slides/day07_recursion.pdf
+3,1,6-Feb,Video,Function declarations,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bbef007b-88a8-4e42-bcc4-ae230027a8f4
+3,1,6-Feb,Video,Passing arrays to functions,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c18158bd-cf31-48c4-a2c0-ae230027a87e
+3,1,6-Feb,Video,Recursion,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=12215376-94e9-48dd-8d5a-ae230027937e
+3,1,6-Feb,Recap,Day 7,questions/day07.html
+3,1,6-Feb,Exercise,Exercise 7,exercise/ex07.html
+3,2,8-Feb,Slides,Separate compilation,slides/day08_separate_compilation.pdf
+3,2,8-Feb,Slides,Makefiles,slides/day08_makefiles.pdf
+3,2,8-Feb,Slides,Header guards,slides/day08_header_guards.pdf
+3,2,8-Feb,Video,Separate compilation,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=76660996-f221-4bda-85bf-ae230027aa0b
+3,2,8-Feb,Video,Makefiles,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=956ae811-74a5-48f2-8d73-ae230027a9b0
+3,2,8-Feb,Video,Header guards,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=76a9e1f6-07f3-483c-9341-ae230027a948
+3,2,8-Feb,Recap,Day 8,questions/day08.html
+3,2,8-Feb,Exercise,Exercise 8,exercise/ex08.html
+3,3,10-Feb,Slides,"Multidimensional arrays, gdb",slides/day09_multidimensional_arrays_gdb.pdf
+3,3,10-Feb,Video,"Multidimensional arrays, gdb",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=67aec427-5035-40bb-a34f-ae230027a824
+3,3,10-Feb,Recap,Day 9,questions/day09.html
+3,3,10-Feb,Exercise,Exercise 9,exercise/ex09.html
+3,3,10-Feb,Resource,GDB Cheat Sheet,https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf
