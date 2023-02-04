@@ -15,6 +15,8 @@ title: Homework 1
 </div>
 </div>
 
+*Update 2/4*: added a few clarifications
+
 ## Learning Objectives
 <div class='admonition success'>
 <div class='title'>Objectives</div>
@@ -41,7 +43,8 @@ of different coin denominations that will be used ("`How many denominations?`").
 for each coin denomination, it prompts the user for a one-letter identifier
 and the value of the coin ("`Enter coin identifier and value in cents:`").
 Note that the coin identifiers are case-sensitive, so "`d`" and "`D`" are
-different identifiers.
+different identifiers.  Also note that the value of the coin must be an
+integer (i.e., the program should represent coin values as integers.)
 
 Once all of the coin identifiers and values
 are recorded, the program enters a command loop. Each time the
@@ -131,6 +134,14 @@ will exit the program with the exit code 1. (In future assignments, we will
 expect you to write functions to modularize your program, but you don't need
 to use functions for this assignment.)
 
+Note that you do not need to handle the following kinds of errors:
+
+* The user specifies that there are fewer than 1 or more than 20 coin denominations
+* The user enters the same coin identifier more than once when entering the
+  coin denominations
+* The user uses the "`r`" command in a way that would cause the count
+  of a particular kind of coin to drop below 0
+
 ### Hints and Specifications
 
 The program should allow the user to enter up to 20 coin denominations.
@@ -177,6 +188,21 @@ and often! And once you get a good start on the assignment, always have
 some earlier compiling version of your work pushed up to Github.
 
 ### Example Runs
+
+<div class="admonition caution">
+<div class='title'>Caution</div>
+<div class='content'>
+<p>
+Note that when you test your program in a terminal using the example inputs
+shown below, the result should be <em>exactly</em> what is shown below,
+including spacing. Note that
+<ul>
+  <li>Each prompt should end with a space, but should <em>not</em> have a newline at the end</li>
+  <li>Each output line in response to the "`s`" and "`q`" commands <em>should</em> end with a newline</li>
+</ul>
+</p>
+</div>
+</div>
 
 Here are several samples runs of the program on ugrad, where $ denotes
 the command prompt, and user input is shown in **bold**. Note that the
