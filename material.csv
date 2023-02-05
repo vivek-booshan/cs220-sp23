@@ -63,6 +63,8 @@ Week,Day,Date,Type,Link text,URL
 3,1,6-Feb,Video,Recursion,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=12215376-94e9-48dd-8d5a-ae230027937e
 3,1,6-Feb,Recap,Day 7,questions/day07.html
 3,1,6-Feb,Exercise,Exercise 7,exercise/ex07.html
+3,1,6-Feb,LectureSlides,"Day 07 Nodes (Sec 03)",slides/notes/sp23_day07_sec03.pdf
+3,1,6-Feb,LectureSlides,"Day 07 Nodes (Sec 04)",slides/notes/sp23_day07_sec04.pdf
 3,2,8-Feb,Slides,Separate compilation,slides/day08_separate_compilation.pdf
 3,2,8-Feb,Slides,Makefiles,slides/day08_makefiles.pdf
 3,2,8-Feb,Slides,Header guards,slides/day08_header_guards.pdf
