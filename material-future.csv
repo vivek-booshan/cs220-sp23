@@ -1,20 +1,3 @@
-4,1,13-Feb,Video,Pointers,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7dd96f56-4676-4f7c-913d-ae230027a7a3
-4,1,13-Feb,Slides,Pointers,slides/day10_pointers.pdf
-4,1,13-Feb,Recap,Day 10,questions/day10.html
-4,1,13-Feb,Exercise,Exercise 10,exercise/ex10.html
-4,1,13-Feb,Resource,Binky the Pointer (Video),https://www.youtube.com/watch?v=5VnDaHBi8dM
-4,2,15-Feb,Video,Dynamic Memory Allocation,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=88e3945a-f1f2-4442-825e-ae230027a746
-4,2,15-Feb,Video,Valgrind,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4c78306-67c7-4184-955f-ae230027a6b2
-4,2,13-Feb,Slides,Dynamic Memory Allocation,slides/day11_dynamic_memory_allocation.pdf
-4,2,13-Feb,Slides,Valgrind,slides/day11_valgrind.pdf
-4,2,13-Feb,Recap,Day 11,questions/day11.html
-4,2,15-Feb,Exercise,Exercise 11,exercise/ex11.html
-4,3,17-Feb,Video,Pointer Arithmetic,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d83163b7-7827-4bca-a6ca-ae2300279303
-4,3,17-Feb,Video,"Dynamic 2-D Arrays, Pointers and Const",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5b124364-dcca-4e9b-b276-ae23002792a9
-4,3,17-Feb,Slides,Pointer Arithmetic,slides/day12_pointer_arithmetic.pdf
-4,3,17-Feb,Slides,"Dynamic 2-D Arrays, Pointers and Const",slides/day12_more_pointers_dynamic_2d_arrays.pdf
-4,3,17-Feb,Recap,Day 12,questions/day12.html
-4,3,17-Feb,Exercise,Exercise 12,exercise/ex12.html
 5,1,20-Feb,Video,Lifetime/Scope,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6fa78f1f-431c-40ea-95e2-ae230027a663
 5,1,20-Feb,Video,Structs,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=81f128ab-96f2-433e-b770-ae230027a5f4
 5,1,20-Feb,Video,Random number generation,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e02cd998-bfde-4c4a-977a-ae23002791e7
