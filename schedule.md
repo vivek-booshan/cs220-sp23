@@ -15,7 +15,7 @@ Assignment/Exam | Date
 --------------- | ----
 [Homework 0](assign/hw0.html) | Due Friday, Feb 3rd
 [Homework 1](assign/hw1.html) | Due Friday, Feb 10th
-Homework 2 | Due Friday, Feb 17th<br>(no late submissions)
+Homework 2 (on [Gradescope](https://www.gradescope.com/) as<br>"HW 2: C basics (written)") | Due Friday, Feb 17th<br>(no late submissions)
 Homework 3 | Due Friday, Feb 24th
 Homework 4 | Friday, Mar 3rd<br>(no late submissions)
 Exam 1 | Friday, March 10th (in class)
