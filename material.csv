@@ -87,6 +87,8 @@ Week,Day,Date,Type,Link text,URL
 4,1,13-Feb,Recap,Day 10,questions/day10.html
 4,1,13-Feb,Exercise,Exercise 10,exercise/ex10.html
 4,1,13-Feb,Resource,Binky the Pointer (Video),https://www.youtube.com/watch?v=5VnDaHBi8dM
+4,1,13-Feb,LectureSlides,"Day 10 Notes (Sec 03)",slides/notes/sp23_day10_sec03.pdf
+4,1,13-Feb,LectureSlides,"Day 10 Notes (Sec 04)",slides/notes/sp23_day10_sec04.pdf
 4,2,15-Feb,Video,Dynamic Memory Allocation,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=88e3945a-f1f2-4442-825e-ae230027a746
 4,2,15-Feb,Video,Valgrind,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4c78306-67c7-4184-955f-ae230027a6b2
 4,2,13-Feb,Slides,Dynamic Memory Allocation,slides/day11_dynamic_memory_allocation.pdf
