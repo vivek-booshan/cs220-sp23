@@ -204,13 +204,6 @@ prompt, and text in **bold** is user input.
 
 Test 1
 
-<!--
-```bash
-$ intermediate      # user input
-intermediate        # program output
-```
--->
-
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
 <b>intermediate</b>
@@ -218,14 +211,6 @@ intermediate
 </pre></div>
 
 Test 2
-
-<!--
-```bash
-$ int*e*r*me*diate* # user input
-intermediate        # program output
-inttterrmeediateeee # program output
-```
--->
 
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
@@ -236,13 +221,6 @@ inttterrmeediateeee
 
 Test 3
 
-<!--
-```
-$ ina?ttt?t*e*r*ms?e*diate*
-inttterrmeediateeee
-```
--->
-
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
 <b>ina?ttt?t*e*r*ms?e*diate*</b>
@@ -251,14 +229,6 @@ inttterrmeediateeee
 
 Test 4 (by default, the `~` wildcard matches works with at most 10
 characters)
-
-<!--
-```bash
-$ ~                     # only show words with at most 10 characters
-program
-aaa
-```
--->
 
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
@@ -269,17 +239,6 @@ aaa
 
 Test 5 (with the default restriction of 10, the regex `~~` will match
 words of at most 20 characters)
-
-<!--
-```bash
-$ ~~                    # words at most 2*10 = 20 characters (all words)
-intermediate
-inttterrmeediateeee
-program
-ppproograaamm
-aaa
-```
--->
 
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
@@ -293,13 +252,6 @@ aaa
 
 Test 6 (the `~` can represent two characters, followed by an `a`)
 
-<!--
-```bash
-$ ~a                    # the ~ can represent two characters, followed by an a.
-aaa                     # All regex characters need to be matched.
-```
--->
-
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
 <b>~a</b>
@@ -307,13 +259,6 @@ aaa
 </pre></div>
 
 Test 7 (all the `a?` are ignored, and only the trailing `aaa` are considered)
-
-<!--
-```bash
-$ a?a?a?a?a?a?a?aaa   # all the 'a?' are ignored, and only the trailing 'aaa' are considered
-aaa
-```
--->
 
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
@@ -323,13 +268,6 @@ aaa
 
 Test 8
 
-<!--
-```bash
-$ a*
-aaa
-```
--->
-
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
 <b>a*</b>
@@ -338,20 +276,26 @@ aaa
 
 Test 9
 
-<!--
-```
-$ a*b
-No match found for regex 'a*b'
-```
--->
-
 <div class='highlighter-rouge'><pre>
 $ <b>./hw3 input.txt</b>
-<b>a*b</b>
-No match found for regex 'a*b'
+<b>a&#42;b</b>
+No match found for regex 'a&#42;b'
 </pre></div>
 
 ## Testing
+
+You must implement the following function to determine whether a particular
+regex pattern matches a given word:
+
+```c
+/** Match function to check whether regex matches a word.
+ * @param regex, is a null terminated char array of the regex
+ * @param word is the null terminated char array of word to match to
+ * @param restriction is the restriction size for the tilde operator
+ * @return 1 if it is a match, else 0 if it's not a match.
+ */
+int match(const char *regex, const char *word, int restriction);
+```
 
 In addition to your `hw3.c` program, you must write a second program
 called `test_functions.c` that tests your functions via `assert(...)`
@@ -394,6 +338,79 @@ fclose(fptr);
 When you submit your `.zip` file to Gradescope, you do not need to
 submit your `.txt` test files, because the test program should create
 them **from within** the program.
+
+## Using Recursion
+
+The `match` function should be implemented recursively.
+
+<div class='admonition danger'>
+<div class='title'>Warning</div>
+<div class='content'>
+<p>
+We <strong>emphatically</strong> recommend that you do not try to implement
+the <code>match</code> function non-recursively (i.e., using loops.)
+If you try this it is <strong>extremely</strong> unlikely that you will
+achieve a fully working solution. The <code>match</code> function can
+be implemented recursively in around 30 lines of code if you think about
+it the right way.
+</p>
+</div>
+</div>
+
+The primary challenge of matching a regular expression is that
+when a wildcard pattern is encountered, it could match the word in
+multiple ways.
+
+For example, let's say that the `match` function is trying to match
+`a*` against part of the word being considered. There are two possibilities:
+
+* if the next unmatched character in the word is `a`, then
+  the `a*` pattern could match that occurence of `a` as well as
+  0 or more additional occurrences of `a`
+* regardless of whether the next unmatched character in the word
+  is `a`, the pattern could match exactly 0 occurrences of `a`
+
+The key insight is that it is impossible to predict *which* of these
+possibilities will lead to a successful match for the overall string.
+So, the `match` function should be prepared to try *both* of them.
+
+Here's an idea of how this might look in your code:
+
+```c
+int match(const char *regex, const char *word, int restriction) {
+
+  // ...
+
+  if (/* regex starts with 'a*' */) {
+    if (/* word starts with 'a' */) {
+      // try letting the 'a*' match the initial 'a' in the word
+      if (match(/* ??? */, /* the rest of the word */, restriction))
+        return 1;
+    }
+
+    // try assuming that the 'a*' should match nothing
+    if (match(/* rest of regex */, /* ??? */, restriction))
+      return 1;
+  }
+
+  // ...
+
+}
+```
+
+Note that the occurrences of `???` above are meant to make you think about how
+the recursion should make progress.  Also, in the actual implementation,
+you wouldn't have a special case for just `a*`, but rather any non-wildcard
+character followed by `*`.
+
+This type of recursive strategy is called *recursive backtracking*. The idea is
+that the function is exploring a space of possibilities.  If one way of
+making progress doesn't succeed, then it still might be possible to try
+another way of making progress.
+
+As with any recursion, you will need to think about what the base case
+(or cases) of the recursion should be, and how the recursion can make
+progress towards a base case.
 
 ## Files
 
