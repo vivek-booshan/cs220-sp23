@@ -235,7 +235,7 @@ the materials for that week.
       <td>Lecture<br>Slides</td>
       <td><a href='slides/notes/sp23_day10_sec03.pdf'>Day 10 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day10_sec04.pdf'>Day 10 Notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day11_sec03.pdf'>Day 11 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day11_sec04.pdf'>Day 11 Notes (Sec 04)</a></td>
-      <td></td>
+      <td><a href='slides/notes/sp23_day12_sec03.pdf'>Day 12 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day12_sec04.pdf'>Day 12 Notes (Sec 04)</a></td>
     </tr>
     <tr>
       <td>Recorded<br>Sessions</td>
