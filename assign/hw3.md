@@ -40,9 +40,8 @@ Preliminary assignment description, not official
 
 ## Overview
 
-A regular expression, or simply **regex**, is a sequence
-of characters that defines a search pattern [wikipedia](
-https://en.wikipedia.org/wiki/Regular_expression). We then use such
+A [regular expression](https://en.wikipedia.org/wiki/Regular_expression), or simply **regex**, is a sequence
+of characters that defines a search pattern. We then use such
 patterns to do “find” or “find-then-replace” operations on a
 given text. Regular expressions are very popular and widely used. You,
 yourself, use them regularly when working on a mac/linux terminal. For
