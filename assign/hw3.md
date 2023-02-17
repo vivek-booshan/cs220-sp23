@@ -4,10 +4,6 @@ layout: default
 title: Homework 3
 ---
 
-<div style="font-size: 140%; font-style: italic; text-align: center;">
-Preliminary assignment description, not official
-</div>
-
 <div class='admonition caution'>
 <div class='title'>Caution</div>
 <div class='content'>

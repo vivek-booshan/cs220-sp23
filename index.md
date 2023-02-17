@@ -46,6 +46,7 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **Feb 17** — [Homework 3](assign/hw3.html) is due **Friday, Feb 24th** by 11pm.
 * **Feb 10** — Homework 2 is due **Friday, Feb 17th** on Gradescope. Note that because
   it is a written assignment, late days may not be used.
 * **Feb 4** — [Homework 1](assign/hw1.html) has been updated with a few clarifications
