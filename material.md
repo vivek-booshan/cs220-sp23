@@ -66,12 +66,6 @@ the materials for that week.
       <td><a href='slides/notes/sp23_day02_sec03.pdf'>Day 02 notes (Sec 03)</a><br><a href='slides/notes/sp23_day02_sec04.pdf'>Day 02 notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day03_sec03.pdf'>Day 03 notes (Sec 03)</a><br><a href='slides/notes/sp23_day03_sec04.pdf'>Day 03 notes (Sec 04)</a></td>
     </tr>
-    <tr>
-      <td>Recorded<br>Sessions</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -122,12 +116,6 @@ the materials for that week.
       <td><a href='slides/notes/sp23_day04_sec03.pdf'>Day 04 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day04_sec04.pdf'>Day 04 Notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day05_sec03.pdf'>Day 05 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day05_sec04.pdf'>Day 05 Notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day06_sec03.pdf'>Day 06 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day06_sec04.pdf'>Day 06 Notes (Sec 04)</a></td>
-    </tr>
-    <tr>
-      <td>Recorded<br>Sessions</td>
-      <td></td>
-      <td></td>
-      <td></td>
     </tr>
   </tbody>
 </table>
@@ -180,12 +168,6 @@ the materials for that week.
       <td><a href='slides/notes/sp23_day08_sec03.pdf'>Day 08 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day08_sec04.pdf'>Day 08 Notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day09_sec03.pdf'>Day 09 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day09_sec04.pdf'>Day 09 Notes (Sec 04)</a></td>
     </tr>
-    <tr>
-      <td>Recorded<br>Sessions</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -237,8 +219,53 @@ the materials for that week.
       <td><a href='slides/notes/sp23_day11_sec03.pdf'>Day 11 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day11_sec04.pdf'>Day 11 Notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day12_sec03.pdf'>Day 12 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day12_sec04.pdf'>Day 12 Notes (Sec 04)</a></td>
     </tr>
+  </tbody>
+</table>
+</div>
+<button type="button" id="week_5_toggle" class="week_control_button">Week 5 (20-Feb to 24-Feb)</button>
+<div id="week_5" class="collapsible">
+<table>
+  <thead>
     <tr>
-      <td>Recorded<br>Sessions</td>
+      <th></th>
+      <th>Day 13 (20-Feb)</th>
+      <th>Day 14 (22-Feb)</th>
+      <th>Day 15 (24-Feb)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Videos</td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6fa78f1f-431c-40ea-95e2-ae230027a663'>Lifetime/Scope</a><br><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=81f128ab-96f2-433e-b770-ae230027a5f4'>Structs</a><br><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e02cd998-bfde-4c4a-977a-ae23002791e7'>Random number generation</a></td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9a428f88-2a13-420b-b008-ae230027a35f'>Binary file I/O</a><br><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=373770ad-6472-4b72-b789-ae230027a246'>Bitwise operations</a></td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ce56b92-a382-468f-8c9e-ae230027a1af'>Number representation, type conversion/casting</a></td>
+    </tr>
+    <tr>
+      <td>Slides</td>
+      <td><a href='slides/day13_lifetime_scope.pdf'>Lifetime/Scope</a><br><a href='slides/day13_struct_type.pdf'>Structs</a><br><a href='slides/day13_random_numbers.pdf'>Random number generation</a></td>
+      <td><a href='slides/day14_binary_file_io.pdf'>Binary file I/O</a><br><a href='slides/day14_bitwise_operations.pdf'>Bitwise operations</a></td>
+      <td><a href='slides/day15_number_rep_type_conversions.pdf'>Number representation, type conversion/casting</a></td>
+    </tr>
+    <tr>
+      <td>Recap<br>Questions</td>
+      <td><a href='questions/day13.html'>Day 13</a></td>
+      <td><a href='questions/day14.html'>Day 14</a></td>
+      <td><a href='questions/day15.html'>Day 15</a></td>
+    </tr>
+    <tr>
+      <td>Exercise</td>
+      <td><a href='exercise/ex13.html'>Exercise 13</a></td>
+      <td><a href='exercise/ex14.html'>Exercise 14</a></td>
+      <td><a href='exercise/ex15.html'>Exercise 15</a></td>
+    </tr>
+    <tr>
+      <td>Additional<br>Resources</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lecture<br>Slides</td>
       <td></td>
       <td></td>
       <td></td>

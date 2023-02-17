@@ -281,7 +281,7 @@ EOF4
     ['Exercise', 'Exercise'],
     ['Resource', 'Additional<br>Resources'],
     ['LectureSlides', 'Lecture<br>Slides'],
-    ['Recording', 'Recorded<br>Sessions']
+    #['Recording', 'Recorded<br>Sessions']
   ].each do |pair|
     type = pair[0]
     row_name = pair[1]
