@@ -334,6 +334,18 @@ When you submit your `.zip` file to Gradescope, you do not need to
 submit your `.txt` test files, because the test program should create
 them **from within** the program.
 
+<div class='admonition caution'>
+<div class='title'>Caution</div>
+<div class='content'>
+<p>
+Make sure you test your code (both the test program and the <code>hw3</code> program)
+using <code>valgrind</code>. Your submission will receive a deduction if the code you
+submit has any memory errors such as out of bounds array accesses, uses of invalid
+memory, uses of uninitialized values, etc.
+</p>
+</div>
+</div>
+
 ## Using Recursion
 
 The `match` function should be implemented recursively.
