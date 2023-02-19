@@ -34,6 +34,9 @@ title: Homework 3
 </div>
 </div>
 
+*Update 2/19*: Clarified that error messages should be printed
+to `stderr`. See the [Program Behavior](#program-behavior) section.
+
 ## Overview
 
 A [regular expression](https://en.wikipedia.org/wiki/Regular_expression), or simply **regex**, is a sequence
@@ -80,7 +83,7 @@ There are three regex wildcard characters for this assignment: `*`, `?`, and `~`
 
 The input file will be passed in as the first argument to the program. If
 you run the program without specifying an input file, you must print an
-error and return a non-zero value from main.
+error message and return a non-zero value from main.
 
 The first line of the input file will contain a number `n` indicating the
 number of words in the file. If the first line is not a valid number,
@@ -135,7 +138,9 @@ the other counted as 1 instance) to match the search word - you must
 explore all possibilities. (Hint: think recursion!)
 
 If a particular regex pattern has no match, then you should output
-`No match found for regex '...'` where `...` contains the regex pattern
+`No match found for regex '...'` where `...` contains the regex pattern.
+Note that this is *not* an error message, so it should be printed
+to `stdout`.
 
 The default `restriction` length for the `~` (tilde) operator is 10,
 however the user can optionally specify a `restriction` length (>= 1)
@@ -144,6 +149,8 @@ specifies an invalid `restriction` length, then the program should
 print an error message and return a non-zero value from main.  (Hint:
 You can use C's `atoi` command in `stdlib.h` or `sscanf` to convert a
 string from the command line into an `int`.)
+
+Error messages should be printed to `stderr`.
 
 ### Other Requirements
 
