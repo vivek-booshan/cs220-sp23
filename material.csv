@@ -113,6 +113,8 @@ Week,Day,Date,Type,Link text,URL
 5,1,20-Feb,Slides,Random number generation,slides/day13_random_numbers.pdf
 5,1,20-Feb,Recap,Day 13,questions/day13.html
 5,1,20-Feb,Exercise,Exercise 13,exercise/ex13.html
+5,1,20-Feb,LectureSlides,"Day 13 Notes (Sec 03)",slides/notes/sp23_day13_sec03.pdf
+5,1,20-Feb,LectureSlides,"Day 13 Notes (Sec 04)",slides/notes/sp23_day13_sec04.pdf
 5,2,22-Feb,Video,Binary file I/O,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9a428f88-2a13-420b-b008-ae230027a35f
 5,2,22-Feb,Video,Bitwise operations,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=373770ad-6472-4b72-b789-ae230027a246
 5,2,22-Feb,Slides,Binary file I/O,slides/day14_binary_file_io.pdf
