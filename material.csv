@@ -121,7 +121,9 @@ Week,Day,Date,Type,Link text,URL
 5,2,22-Feb,Slides,Bitwise operations,slides/day14_bitwise_operations.pdf
 5,2,22-Feb,Recap,Day 14,questions/day14.html
 5,2,22-Feb,Exercise,Exercise 14,exercise/ex14.html
-5,3,24-Feb,Video,"Number representation, type conversion/casting",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ce56b92-a382-468f-8c9e-ae230027a1af
-5,3,24-Feb,Slides,"Number representation, type conversion/casting",slides/day15_number_rep_type_conversions.pdf
+5,2,22-Feb,LectureSlides,"Day 14 Notes (Sec 03)",slides/notes/sp23_day14_sec03.pdf
+5,2,22-Feb,LectureSlides,"Day 14 Notes (Sec 04)",slides/notes/sp23_day14_sec04.pdf
+5,3,24-Feb,Video,"Number representation,<br>type conversion/casting",https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ce56b92-a382-468f-8c9e-ae230027a1af
+5,3,24-Feb,Slides,"Number representation,<br>type conversion/casting",slides/day15_number_rep_type_conversions.pdf
 5,3,24-Feb,Recap,Day 15,questions/day15.html
 5,3,24-Feb,Exercise,Exercise 15,exercise/ex15.html
