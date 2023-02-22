@@ -149,7 +149,7 @@ See the [CA office hours](officehours.html) page for the CA office hours schedul
 </div>
 
 <div class="card">
-  <img alt="Linda photo" src="{{site.baseurl}}/img/staffpix/placeholder.jpg">
+  <img alt="Linda photo" src="{{site.baseurl}}/img/staffpix/linda.jpg">
   <div class="details">
    <span class="name_and_role">Linda Fan</span><br>
    Email: <a href="mailto:yfan43@jhu.edu">yfan43@jhu.edu</a><br>
