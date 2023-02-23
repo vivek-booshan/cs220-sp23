@@ -37,6 +37,9 @@ title: Homework 3
 *Update 2/19*: Clarified that error messages should be printed
 to `stderr`. See the [Program Behavior](#program-behavior) section.
 
+*Update 2/23*: Updated language on whether additional functions
+are required.
+
 ## Overview
 
 A [regular expression](https://en.wikipedia.org/wiki/Regular_expression), or simply **regex**, is a sequence
@@ -157,10 +160,12 @@ Error messages should be printed to `stderr`.
 All variables must be declared inside functions. No variables should be
 global or `extern`.
 
-You must factor your code into functions, each function performing a
+<strike style="color: gray;">You must factor your code into functions, each function performing a
 distinct task. We give one required function prototype below under
-"Testing" but this should **NOT** be the only non-main function in
-your program.
+"Testing" but this should <b>NOT</b> be the only non-main function in
+your program.</strike> We encourage you to create additional functions
+(beyond the required `match` function) if they help to simplify the
+implementation program. However, it's not a strict requirement.
 
 You may **NOT** use the C library `regex.h` or any inbuilt regular
 expression matching types in your program.
