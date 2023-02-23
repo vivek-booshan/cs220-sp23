@@ -29,6 +29,16 @@ TODO: Cloning your midterm project repository
 
 TODO: Copying the starter code.
 
+## Example of Program Functionality
+
+TODO: brief example of program functionality (corresponding to one of
+the test inputs in the starter code). Possible format could be:
+
+* input file
+* background image
+* sequence of transformations on the puzzle (both tile locations
+  and expected result image)
+
 # Program Requirements
 
 ## Program Structure, Data Types
