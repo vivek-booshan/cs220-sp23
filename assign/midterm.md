@@ -16,6 +16,22 @@ title: "Midterm Project"
 </div>
 </div>
 
+<div class='admonition success'>
+<div class='title'>Objectives</div>
+<div class='content'>
+<ul>
+<li>structs</li>
+<li>binary file I/O</li>
+<li>nested loops</li>
+<li>data representations</li>
+<li>dynamic memory allocation</li>
+<li>makefile</li>
+<li>development tools <code>gdb</code>, <code>valgrind</code>, <code>git</code></li>
+<li>unit tests</li>
+</ul>
+</div>
+</div>
+
 # Overview
 
 TODO: What a 15 puzzle is.
