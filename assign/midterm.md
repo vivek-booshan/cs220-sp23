@@ -120,13 +120,14 @@ a brief summary of what this input does:
    `ingo_solved.ppm` and text file `ingo_solved.txt`
    (the second `W` command)
 
-This is the background image:
+This is the background image (`ingo.ppm`):
 
 <div class="puzzle_layout">
 <a href="img/ingo.png"><img class="puzzle_img" src="img/ingo.png" alt="Picture of Ingo the cat"></a>
 </div>
 
-This is the initial scrambled puzzle configuration:
+This is the initial scrambled puzzle configuration (the image is
+`ingo_scrambled.ppm`):
 
 <div class="puzzle_layout">
 <table class="puzzle">
@@ -147,7 +148,7 @@ This is the initial scrambled puzzle configuration:
 </div>
 
 After all of the "S" commands complete, the puzzle is in its
-"solved" configuration:
+"solved" configuration (the image is `ingo_solved.ppm`):
 
 <div class="puzzle_layout">
 <table class="puzzle">
