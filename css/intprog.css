@@ -43,7 +43,6 @@ tr:nth-child(even) {
 /* For Spring 2023 midterm project writeup */
 
 table.puzzle {
-  margin-left: 2em;
   margin-top: 8px;
   margin-bottom: 8px;
   display: inline-block;
@@ -65,6 +64,9 @@ table.puzzle td.gap {
   display: inline-block;
   vertical-align:middle;
   width: 224px;
+}
+
+.puzzle_layout {
   margin-left: 2em;
 }
 

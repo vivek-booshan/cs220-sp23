@@ -120,9 +120,15 @@ a brief summary of what this input does:
    `ingo_solved.ppm` and text file `ingo_solved.txt`
    (the second `W` command)
 
+This is the background image:
+
+<div class="puzzle_layout">
+<a href="img/ingo.png"><img class="puzzle_img" src="img/ingo.png" alt="Picture of Ingo the cat"></a>
+</div>
+
 This is the initial scrambled puzzle configuration:
 
-<div>
+<div class="puzzle_layout">
 <table class="puzzle">
  <tr>
   <td>5</td><td>7</td><td>1</td><td>2</td>
@@ -137,13 +143,13 @@ This is the initial scrambled puzzle configuration:
   <td>14</td><td>15</td><td>10</td><td>12</td>
  </tr>
 </table>
-<a href="img/ingo_scrambled.png"><img class="puzzle_img"  src="img/ingo_scrambled.png" alt="Scrambled puzzle image"></a>
+<a href="img/ingo_scrambled.png"><img style="margin-left: 2em;" class="puzzle_img"  src="img/ingo_scrambled.png" alt="Scrambled puzzle image"></a>
 </div>
 
 After all of the "S" commands complete, the puzzle is in its
 "solved" configuration:
 
-<div>
+<div class="puzzle_layout">
 <table class="puzzle">
  <tr>
   <td>1</td><td>2</td><td>3</td><td>4</td>
@@ -158,7 +164,7 @@ After all of the "S" commands complete, the puzzle is in its
   <td>13</td><td>14</td><td>15</td><td class="gap">12</td>
  </tr>
 </table>
-<a href="img/ingo_solved.png"><img class="puzzle_img"  src="img/ingo_solved.png" alt="Solved puzzle image"></a>
+<a href="img/ingo_solved.png"><img style="margin-left: 2em;" class="puzzle_img"  src="img/ingo_solved.png" alt="Solved puzzle image"></a>
 </div>
 
 # Program Requirements
