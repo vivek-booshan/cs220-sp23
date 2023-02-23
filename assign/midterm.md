@@ -34,10 +34,22 @@ title: "Midterm Project"
 
 # Overview
 
-TODO: What a 15 puzzle is.
+In this project, you will implement a program to perform operations
+on a [15 Puzzle](https://en.wikipedia.org/wiki/15_puzzle), which is
+a puzzle consisting of a square grid of tiles with one tile missing.
+By sliding a tile into the "gap" left by the missing tile, the tiles
+can be moved around. The goal is to rearrange the tiles so that each
+one is in the correct position.
 
-TODO: Brief overview of what the program will do. (Note: the program needs to
-be capable of manipulating arbitrary NxN puzzles.)
+The program will read and carry out a series of commands. The commands
+can be used to
+
+* create a new puzzle
+* set an initial configuration of tiles
+* load a background image (to use when writing images that
+  represent the state of the puzzle)
+* slide tiles to manipulate the configuration of the puzzle
+* check whether or not the puzzle has been solved
 
 # Getting Started
 
@@ -135,7 +147,7 @@ This is the initial scrambled puzzle configuration (the image is
   <td>5</td><td>7</td><td>1</td><td>2</td>
  </tr>
  <tr>
-  <td class="gap"></td><td>4</td><td>3</td><td>4</td>
+  <td class="gap"></td><td>9</td><td>3</td><td>4</td>
  </tr>
  <tr>
   <td>13</td><td>8</td><td>6</td><td>11</td>
