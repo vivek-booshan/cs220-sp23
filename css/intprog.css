@@ -40,6 +40,34 @@ tr:nth-child(even) {
   background: #eee;
 }
 
+/* For Spring 2023 midterm project writeup */
+
+table.puzzle {
+  margin-left: 2em;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 200%;
+}
+
+table.puzzle td {
+  background: white;
+  border: 2px solid black;
+  text-align: center;
+}
+
+table.puzzle td.gap {
+  background: black;
+}
+
+.puzzle_img {
+  display: inline-block;
+  vertical-align:middle;
+  width: 224px;
+  margin-left: 2em;
+}
+
 /***********************************************************************
    Layout div styling / page structure
  ***********************************************************************/
