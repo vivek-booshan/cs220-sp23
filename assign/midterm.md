@@ -397,10 +397,36 @@ TODO: more commands
 For the `I` and `W` commands, you can assume that a filename will not consist of more
 than 255 characters.
 
+If the input ends without an explicit "`Q`" command — i.e., if the program
+tries to read a command but instead reaches the end of the input data — it
+should exit normally (with an exit code of 0.)
+
 ## Running the Program
 
+<!--
 TODO: invoking the program (0 args means read commands from stdin, 1 arg
 means read commands from input file)
+-->
+
+The program executable should be named "`puzzle`".
+
+There are two ways to invoke the program. If invoked without command line
+arguments,
+
+```
+./puzzle
+```
+
+then the program should read commands from `stdin`.
+
+If the program is invoked with a single argument, e.g.
+
+```
+./puzzle input.txt
+```
+
+then the program should read commands from the file named by the
+command line argument.
 
 ## Error Handling
 
