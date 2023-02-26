@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: mathjax
 title: "Midterm Project"
 ---
 
@@ -118,7 +118,7 @@ The input file `test06.txt` has the following contents:
 C 4
 T 5 7 1 2 0 9 3 4 13 8 6 11 14 15 10 12
 I ingo.ppm
-W ingo_orig.ppm ingo_orig.txt
+W ingo_scrambled.ppm ingo_scrambled.txt
 S l
 S u
 S l
@@ -159,7 +159,7 @@ a brief summary of what this input does:
 3. Specifies that `ingo.ppm` is the background image for the puzzle
    (the `I` command)
 4. Saves the initial (scrambled) configuration of the puzzle to image
-   `ingo_orig.ppm` and text file `ingo_orig.txt` (the first `W` command)
+   `ingo_scrambled.ppm` and text file `ingo_scrambled.txt` (the first `W` command)
 5. Performs a series of moves (the `S` commands)
 6. Saves the final solved configuration of the puzzle to the image
    `ingo_solved.ppm` and text file `ingo_solved.txt`
@@ -217,22 +217,87 @@ After all of the "S" commands complete, the puzzle is in its
 
 ## Program Structure, Data Types
 
+<!--
 TODO: describe how source/header files are organized (data types
 and function prototypes go in `puzzle.h`, helper functions go
 in `puzzle_funcs.c`, main function goes in `puzzle.c`)
+-->
+The header file `puzzle.h` should have all of the common struct data types
+and function declarations for the overall program.
 
+<!--
 TODO: it's a requirement to have a data type to represent the
 instance of the puzzle (i.e., `typedef struct { /*...*/ } Puzzle;`
+-->
 
+The header file should define a struct data type called `Puzzle`.
+An instance of this data type represents the current configuration
+of the puzzle (it's size and the arrangements of the tiles.)
+This data type can be defined something like this:
+
+```c
+typedef struct {
+  // ...fields go here...
+} Puzzle;
+```
+
+Puzzles will always be square, meaning that the number of rows
+and columns will always be the same.  Each tile can be represented
+by an integer value in the range $$1..N^{2}$$ (inclusive), where
+$$N$$ is the number of rows/columns.  The value $$0$$ represents
+the "gap" (missing tile).  A valid initialized puzzle should always
+have exactly one gap tile. By convention, puzzles will omit
+the tile numbered $$N^{2}$$, meaning that in a solved puzzle, the
+gap will be in the lower right. However, your program should not
+hard-code this assumption.
+
+<!--
 TODO: it's a requirement to have appropriate helper functions
 to do operations on an instance of the puzzle data type
 (could list a few suggestions, e.g., `puzzle_create`,
 `puzzle_set_tile`, etc.)
+-->
 
+Your program is required to use functions to modularize the
+overall functionality of the program. In particular, your program
+should have a set of functions for creating, performing operations
+on, and destroying instances of the `Puzzle` data type.
+There are no specific requirements for which functions you implement
+or how they work. However, here are a few suggestions which
+you may use (or choose not to use):
+
+```c
+Puzzle *puzzle_create(int size);
+void puzzle_destroy(Puzzle *p);
+void puzzle_set_tile(Puzzle *p, int col, int row, int value);
+int puzzle_get_tile(const Puzzle *p, int col, int row);
+```
+
+<!--
 TODO: we expect that the program will use functions throughout the
 program to simplify its implementation. For example, have one
 function to implement each kind of supported command
 (see the [Input File Format](#input-file-format) section)
+-->
+
+We also expect you to use functions to modularize the implementation
+of the variuos commands suppored in the [Input File Format](#input-file-format).
+For example (again, you may use these or choose not to):
+
+```c
+int handle_C_command(FILE *in, Puzzle **p);
+int handle_T_command(FILE *in, Puzzle *p);
+```
+
+The source file `puzzle_funcs.c` should contain the definitions of
+the functions defined in `puzzle.h`.  The source file `puzzle.c` should
+define the program's `main` function.
+
+Your program will use the [PPM image format](https://en.wikipedia.org/wiki/Netpbm).
+The starter code provides you with files `ppm_io.h` and `ppm_io.c`.
+The `ppm_io.h` header file defines a struct type named `Image` which
+represents an image. Functions `ReadImage` and `WriteImage` support
+reading and writing PPM image data, respectively.
 
 ## Input File Format
 
