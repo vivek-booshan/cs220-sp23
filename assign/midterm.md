@@ -357,6 +357,19 @@ sequnence of integer values. The format is exactly the same as the
 <i>tile...</i> sequence specified in the `T` command, but should reflect
 the current puzzle configuration based on any `S` commands that have
 been executed to update the configuration of the puzzle.
+The output should be printed as a single line of text ending with
+a newline (`\n`) character.
+
+The `W` command writes two output files, their names being specified
+by the <i>filename1</i> and <i>filename2</i> arguments. The first
+filename is the name of a PPM image file to be created as a rendering
+of the current puzzle configuration. The gap should be rendered as
+consisting of exclusively black pixels (with the red, green, and blue
+color components being set to 0.) The other tiles should be copied from
+the appropriate rectangular region of the background image loaded previously
+with the `I` command. The second filename is the name of a text file to
+write with the current puzzle configuration, in exactly the same format as
+the output written to `stdout` by the `P` command.
 
 TODO: more commands
 
