@@ -344,7 +344,8 @@ The `T` command initializes the puzzle by assigning either a tile number
 or the gap to each position. The <i>tile...</i> argument is a sequence
 of integers in the range $$0 \ldots N^{2}$$ (inclusive) where $$N$$ is the
 number of rows/columns with the value $$0$$ representing the gap. The numbers
-specify the puzzle configuration in row major order. The `T` command
+specify the puzzle configuration in row major order. There must be
+exactly $$N^{2}$$ tile numbers. The `T` command
 must be specified *after* the `C` command creating the puzzle.
 
 The `I` command reads a PPM file from the specified filename. This iamge
