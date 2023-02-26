@@ -537,6 +537,7 @@ code 1.
 
 ## Reading and Writing PPM Files
 
+<!--
 TODO: brief description of PPM format (copy from image processing assignment?)
 
 TODO: ways of viewing PPM files (remote X and feh program, view in VS Code)
@@ -545,6 +546,61 @@ TODO: brief description of how PPM files are used in the assignment,
 in I command (read into memory) and W command (write an result image by
 "carving up" the original image according to the current configuration of
 the tiles in the puzzle)
+-->
+
+The `ppm_io.h` and `ppm_io.c` header and source files implement support
+for reading and writing [PPM](https://en.wikipedia.org/wiki/Netpbm)
+image files. You should read the code in these files so that you
+understand how they work.
+
+The `ppm_io.h` header defines the following data types:
+
+```c
+typedef struct _pixel {
+  unsigned char r;
+  unsigned char g;
+  unsigned char b;
+} Pixel;
+
+typedef struct _image {
+  Pixel *data;  // pointer to array of Pixels
+  int rows;     // number of rows of Pixels
+  int cols;     // number of columns of Pixels
+} Image;
+```
+
+The `Pixel` data type represents the color of one pixel in an image.
+A pixel color is defined by its red, green, and blue color component
+values, which are intgers in the range 0 to 255, inclusive.
+A color component value represents an intensity, with 0 being least
+intense and 255 being most intense.
+
+The `Image` data type represents an image, which is a rectangular grid
+of pixels. The `rows` and `cols` member variables indicate how many rows
+and columns of pixels there are. The `data` member variable points to
+a dynamically-allocated array of `Pixel` elements representing the
+pixels in the image in row-major order. Note that computer images
+consider the origin (row 0, column 0) to be the upper-left corner of
+the image. In general, the pixels are stored row by row in the array
+that `data` points to, with the first row being the top row of pixels
+in the image.
+
+The `ReadPPM` and `WritePPM` are used to read a PPM image (creating an
+instance of the `Image` data type) and write a PPM image (from an existing
+instance of the `Image` data type), respectively.
+
+Note that in your implementation of the `W` command, you will need to
+create a new `Image` instance in memory, and fill in its member variables
+appropriately.  This code could look something like this:
+
+```c
+Image *img;
+
+img = /* dynamically allocate memory for an instance of Image */;
+img->data = /* dymamically allocate array of Pixel elements */;
+img->rows = /* number of rows of pixels */;
+img->cols = /* number of columns of pixels */;
+```
 
 ## Memory Correctness
 
