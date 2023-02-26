@@ -17,9 +17,9 @@ Assignment/Exam | Date
 [Homework 1](assign/hw1.html) | Due Friday, Feb 10th
 Homework 2 (on [Gradescope](https://www.gradescope.com/) as<br>"HW 2: C basics (written)") | Due Friday, Feb 17th<br>(no late submissions)
 [Homework 3](assign/hw3.html) | Due Friday, Feb 24th
-Homework 4 | Due Friday, Mar 3rd<br>(no late submissions)
-Exam 1 | Friday, March 10th (in class)
-Midterm project | Due Friday, Mar 17th
+Homework 4 (on [Gradescope](https://www.gradescope.com/) as<br>"HW 4: C pointers, structs, bits (written)" | Due Friday, Mar 3rd<br>(no late submissions)
+Midterm exam | Friday, March 10th (in class)
+Midterm project | Due Friday, Mar 17th<br>(no late submissions)
 Homework 5 | Due Wednesday, Apr 5th
 Homework 6 | Due Wednesday, Apr 12th<br>(no late submissions)
 Homework 7 | Due Wednesday, Apr 19th
