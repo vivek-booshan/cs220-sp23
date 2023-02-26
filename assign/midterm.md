@@ -298,10 +298,67 @@ The starter code provides you with files `ppm_io.h` and `ppm_io.c`.
 The `ppm_io.h` header file defines a struct type named `Image` which
 represents an image. Functions `ReadImage` and `WriteImage` support
 reading and writing PPM image data, respectively.
+(See the [Reading and Writing PPM Files](#reading-and-writing-ppm-files)
+section for more information.)
 
 ## Input File Format
 
-TODO: description of the input file format, with all of the commands
+The input to the program (either read from a named file or read from
+`stdin`) is a series of commands.  Each command consists of a capital
+letter. Some specific commands also require argument values which follow
+the command letter.
+
+<!--
+  // C <size>                         create puzzle of specified size
+  // T <sequence of tile numbers...>  set initial state of puzzle
+  // I <filename>                     set the base image filename
+  // P                                print the current state of the puzzle (tile numbers)
+  // W <img filename> <cfg filename>  write image file representing current state of puzzle
+  // S <dir>                          slide free tile in given direction (u, d, l, or r)
+  // K                                check to see whether the puzzle is in the "winning" configuration
+  // Q                                quit the program
+-->
+
+Here is a list of commands and their arguments:
+
+Command | Description
+------- | -----------
+<code class='highlighter-rouge'>C <i>size</i></code> | Create initial puzzle with <i>size</i> rows and columns
+<code class='highlighter-rouge'>T <i>tile...</i></code> | Initialize puzzle configuration with series of tile numbers
+<code class='highlighter-rouge'>I <i>filename</i></code> | Load the background image from specified PPM file
+<code class='highlighter-rouge'>P</code> | Print sequence of tile numbers reflecting current puzzle configuration
+<code class='highlighter-rouge'>W <i>filename1</i> <i>filename</i></code> | Write puzzle image to <i>filename1</i> and puzzle configuration to <i>filename2</i>
+<code class='highlighter-rouge'>S <i>direction</i></code> | Slide a free tile in specified direction
+<code class='highlighter-rouge'>K</code> | Check to see whether the puzzle is in the "winning" configuration
+<code class='highlighter-rouge'>V</code> | Compute a series of moves to solve the puzzle
+<code class='highlighter-rouge'>Q</code> | Quit the program
+
+The `C` command creates the initial instance of the puzzle. The <i>size</i>
+argument must be an integer in the range 2 to 20, inclusive, which specifies
+the number of rows and columns. Each position in the puzzle must
+be initialized with the value of the "gap". This means that the
+puzzle is not "valid" until it has been explicitly initialized
+with the `T` command.
+
+The `T` command initializes the puzzle by assigning either a tile number
+or the gap to each position. The <i>tile...</i> argument is a sequence
+of integers in the range $$0 \ldots N^{2}$$ (inclusive) where $$N$$ is the
+number of rows/columns with the value $$0$$ representing the gap. The numbers
+specify the puzzle configuration in row major order. The `T` command
+must be specified *after* the `C` command creating the puzzle.
+
+The `I` command reads a PPM file from the specified filename. This iamge
+will be used as the "background" image, and is the basis for the rendering
+of the current puzzle configuration as an image performed by the
+`W` command.
+
+The `P` command prints the current puzzle configuration to `stdout` as a
+sequnence of integer values. The format is exactly the same as the
+<i>tile...</i> sequence specified in the `T` command, but should reflect
+the current puzzle configuration based on any `S` commands that have
+been executed to update the configuration of the puzzle.
+
+TODO: more commands
 
 ## Running the Program
 
