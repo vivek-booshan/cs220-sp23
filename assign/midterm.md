@@ -3,7 +3,6 @@ layout: default
 title: "Midterm Project"
 ---
 
-
 <div class='admonition caution'>
 <div class='title'>Caution</div>
 <div class='content'>
@@ -50,12 +49,46 @@ can be used to
   represent the state of the puzzle)
 * slide tiles to manipulate the configuration of the puzzle
 * check whether or not the puzzle has been solved
+* compute a series of moves that will solve the puzzle
+  (if a solution is possible)
 
 # Getting Started
 
-TODO: Cloning your midterm project repository
+After you register your project team, or are assigned to a project team,
+we will create a Github repository for your team to use. You should see
+the repository listed when you visit <https://github.com/orgs/jhu-ip/repositories>
+(assuming that you are logged into Github.) The repository will have
+a name like `2023-spring-midterm-JHEDID1-JHEDID2` where `JHEDID1` and
+`JHEDID2` are your and your partner's JHED IDs.
 
-TODO: Copying the starter code.
+Clone your team repository with the commnad
+
+```
+git clone git@github.com:jhu-ip/2023-spring-midterm-JHEDID1-JHEDID2.git
+```
+
+replacing `JHEDID1` and `JHEDID2` as appropriate.
+
+Next, run the command
+
+```
+git pull
+```
+
+in the course public repository to make sure it's up to date. Then, change
+directory into your clone of your team repository, and run the commands
+
+```
+cp -r ~/cs220-sp23-public/project/midterm/* .
+cp ~/cs220-sp23-public/project/midterm/.gitignore .
+```
+
+to copy the starter files to your team repository. Finally, use
+`git add` and `git commit` to add an commit the starter code
+(don't forget to add and commit the `.gitignore` file), and then
+use `git push` to push the commit to the remote repository on Github.
+Note that only one team member needs to add/commit/push the starter
+files.
 
 ## Example of Program Functionality
 
