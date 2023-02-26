@@ -474,6 +474,7 @@ command line argument.
 
 ## Error Handling
 
+<!--
 TODO: the various kinds of errors that must be handled. Important
 points:
 
@@ -482,6 +483,56 @@ points:
   after printing the error message)
 * Error message text is exact (we should give them a table based on
   the error messages from the reference solution)
+-->
+
+There are two kinds of situations where an error occurs:
+
+* The program is not able to read a well-formed command
+  (e.g., the command letter is invalid, a required argument
+  is missing or invalid, etc.)
+* The program cannot carry out a command that has been
+  successfully read
+
+When an error is encountered, the program must
+
+1. Print an error message to `stderr`
+2. Exit the program with an exit code of 1
+
+Note that there are no "recoverable" errors. I.e., if an error occurs,
+the program never continues reading commands.
+
+This table summarizes the errors that should be handled, and the
+error message that should be printed:
+
+Situation | Could occur in | Message text
+--------- | -------------- | ------------
+Invalid command letter | Reading a command | <code class='highlighter-rouge'>Invalid command '<i>character</i>'</code>
+Missing/invalid command argument | `C`, `T`, `I`, `W` `S` commands | <code class='highlighter-rouge'>Invalid input</code>
+Invalid puzzle size | `C` command | <code class='highlighter-rouge'>Invalid puzzle size</code>
+Puzzle has not been created   | `T`, `P`, `W`, `K`, `V` commands | <code class='highlighter-rouge'>No puzzle</code>
+Invalid tile value | `T` command | <code class='highlighter-rouge'>Invalid tile value</code>
+Could not open background image  | `I` command | <code class='highlighter-rouge'>Could not open image file '<i>filename</i>'</code>
+Background image hasn't been read | `W` command | <code class='highlighter-rouge'>No image</code>
+Background image rows or columns not evenly divisible by puzzle rows/columns | `W` command | <code class='highlighter-rouge'>Invalid image dimensions</code>
+Output image file can't be opened | `W` command | <code class='highlighter-rouge'>Could not open output image file '<i>filename</i>'</code>
+Output puzzle configuration file can't be opened | `W` command | <code class='highlighter-rouge'>Could not open output puzzle file '<i>filename</i>'</code>
+Puzzle configuration data isn't written successfully | `W` command | <code class='highlighter-rouge'>Could not write puzzle data '<i>filename</i>'</code>
+There isn't a free tile that can be moved in specified direction | `S` command | <code class='highlighter-rouge'>Puzzle cannot be moved in specified direction</code>
+
+Some of the error messages have values to be filled in:
+
+* *character*: for an invalid command, the character entered as the command name
+* *filename*: if an error involves a file, the filename
+
+The error message must be printed on a single line (terminated with
+a newline), and must have the exact text (with suitable values filled in)
+as specified in the table.
+
+As a special case, if `ReadPPM` fails to successfully read PPM data, or
+`WritePPM` fails to successfully write PPM data, those functions will
+print their own error messages. If this occurs, the `puzzle` program
+shouldn't print any additional error message, but should exit with exit
+code 1.
 
 ## Reading and Writing PPM Files
 
