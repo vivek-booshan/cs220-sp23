@@ -367,11 +367,35 @@ of the current puzzle configuration. The gap should be rendered as
 consisting of exclusively black pixels (with the red, green, and blue
 color components being set to 0.) The other tiles should be copied from
 the appropriate rectangular region of the background image loaded previously
-with the `I` command. The second filename is the name of a text file to
+with the `I` command. The background image is expected to have width
+and height which are both exact multiples of the number of rows/columns
+in the puzzle. The second filename is the name of a text file to
 write with the current puzzle configuration, in exactly the same format as
 the output written to `stdout` by the `P` command.
 
+The `S` command slides the "free" tile in the direction specified by the
+*dir* argument, which is one of the characters `u` (up), `d` (down), `l` (left),
+or `r` (right). The "free" tile to be moved is the one adjacent to the single
+gap position.
+
+The `K` command checks to see whether the current puzzle configuration
+is the "solved" configuration. A puzzle is considered solved if every
+non-gap tile is in its expected position. For example, tile 1 should
+be in the upper-left position, tile 2 should be immediate to its right,
+etc. Based on whether or not the puzzle is solved, the program
+should print either the output "`Solved`" or "`Not solved`" as
+a single line of text ending with a newline (`\n`) character.
+
+The `V` command computes a series of moves which solve the puzzle,
+if the puzzle can be solved. *TODO: more description here*
+
+The `Q` command quits the program. The program should exit with an
+exit code of 0 when the `Q` command is executed.
+
 TODO: more commands
+
+For the `I` and `W` commands, you can assume that a filename will not consist of more
+than 255 characters.
 
 ## Running the Program
 
