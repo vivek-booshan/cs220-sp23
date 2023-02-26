@@ -150,7 +150,7 @@ W ingo_solved.ppm ingo_solved.txt
 ```
 
 The meaning of each of these commands is fully described in the
-[Input File Format](#input-file-format) section below. However, here is
+[Input Format](#input-format) section below. However, here is
 a brief summary of what this input does:
 
 1. Specifies that the puzzle is 4x4 (the `C` command)
@@ -277,11 +277,11 @@ int puzzle_get_tile(const Puzzle *p, int col, int row);
 TODO: we expect that the program will use functions throughout the
 program to simplify its implementation. For example, have one
 function to implement each kind of supported command
-(see the [Input File Format](#input-file-format) section)
+(see the [Input Format](#input-format) section)
 -->
 
 We also expect you to use functions to modularize the implementation
-of the variuos commands suppored in the [Input File Format](#input-file-format).
+of the variuos commands suppored in the [Input Format](#input-format).
 For example (again, you may use these or choose not to):
 
 ```c
@@ -301,7 +301,7 @@ reading and writing PPM image data, respectively.
 (See the [Reading and Writing PPM Files](#reading-and-writing-ppm-files)
 section for more information.)
 
-## Input File Format
+## Input Format
 
 The input to the program (either read from a named file or read from
 `stdin`) is a series of commands.  Each command consists of a capital
@@ -376,7 +376,53 @@ the output written to `stdout` by the `P` command.
 The `S` command slides the "free" tile in the direction specified by the
 *dir* argument, which is one of the characters `u` (up), `d` (down), `l` (left),
 or `r` (right). The "free" tile to be moved is the one adjacent to the single
-gap position.
+gap position that is free to move into the gap. As an illustration of the
+behavior of the `S` command, consider the following puzzle configuration
+(the initial configuration from the
+[Example of Program Functionality](#example-of-program-functionality) section):
+
+<div class="puzzle_layout">
+<table class="puzzle">
+ <tr>
+  <td>5</td><td>7</td><td>1</td><td>2</td>
+ </tr>
+ <tr>
+  <td class="gap"></td><td>9</td><td>3</td><td>4</td>
+ </tr>
+ <tr>
+  <td>13</td><td>8</td><td>6</td><td>11</td>
+ </tr>
+ <tr>
+  <td>14</td><td>15</td><td>10</td><td>12</td>
+ </tr>
+</table>
+<a href="img/ingo_scrambled.png"><img style="margin-left: 2em;" class="puzzle_img"  src="img/ingo_scrambled.png" alt="Scrambled puzzle image"></a>
+</div>
+
+If the command `S u` is executed, the tile immediately *below* the
+gap (tile 13) is moved up, resulting in this configuration;
+
+<div class="puzzle_layout">
+<table class="puzzle">
+ <tr>
+  <td>5</td><td>7</td><td>1</td><td>2</td>
+ </tr>
+ <tr>
+  <td>13</td><td>9</td><td>3</td><td>4</td>
+ </tr>
+ <tr>
+  <td class="gap"></td><td>8</td><td>6</td><td>11</td>
+ </tr>
+ <tr>
+  <td>14</td><td>15</td><td>10</td><td>12</td>
+ </tr>
+</table>
+<a href="img/ingo_S_up.png"><img style="margin-left: 2em;" class="puzzle_img"  src="img/ingo_S_up.png" alt="Puzzle after moving the free tile up"></a>
+</div>
+
+Note that because the gap is on the left edge of the puzzle, the `S r` command
+would not be legal, because there is no free tile to the left of the gap to move
+to the right.
 
 The `K` command checks to see whether the current puzzle configuration
 is the "solved" configuration. A puzzle is considered solved if every
@@ -391,8 +437,6 @@ if the puzzle can be solved. *TODO: more description here*
 
 The `Q` command quits the program. The program should exit with an
 exit code of 0 when the `Q` command is executed.
-
-TODO: more commands
 
 For the `I` and `W` commands, you can assume that a filename will not consist of more
 than 255 characters.
