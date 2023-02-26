@@ -535,6 +535,13 @@ print their own error messages. If this occurs, the `puzzle` program
 shouldn't print any additional error message, but should exit with exit
 code 1.
 
+## Solving the Puzzle
+
+This section describes the algorithm you should implement to handle
+the `V` command (to compute a sequence of moves to solve the puzzle.)
+
+*TODO: write this section*
+
 ## Reading and Writing PPM Files
 
 <!--
