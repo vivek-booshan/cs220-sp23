@@ -315,7 +315,7 @@ of the current puzzle configuration as an image performed by the
 `W` command.
 
 The `P` command prints the current puzzle configuration to `stdout` as a
-sequnence of integer values. The format is exactly the same as the
+sequence of integer values. The format is exactly the same as the
 <i>tile...</i> sequence specified in the `T` command, but should reflect
 the current puzzle configuration based on any `S` commands that have
 been executed to update the configuration of the puzzle.
