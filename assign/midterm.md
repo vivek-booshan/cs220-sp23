@@ -517,7 +517,7 @@ the `V` command (to compute a sequence of moves to solve the puzzle.)
   Solving the puzzle will involve an algorithm with an exponential running
   time. For this reason, we will only expect your program's
   <code class='highlighter-rouge'>V</code> command
-  to work if the puzzle size is 3x3.
+  to work if the puzzle size is 3x3 (an "8-puzzle".)
 </p>
 </div>
 </div>
@@ -534,6 +534,7 @@ This algorithm is described by the following pseudo-code:
 //   steps - array of directions (u/d/l/r)
 //   max_steps - maximum number of steps to try
 //   cur_steps - how many steps have been considered so far
+
 function solve_puzzle(p, steps[], max_steps, cur_steps) {
   if (p is solved)
     return cur_steps   // steps array has a complete sequence of steps
@@ -542,7 +543,7 @@ function solve_puzzle(p, steps[], max_steps, cur_steps) {
     return FAILURE     // we reached the max number of steps
 
   for direction in 'u', 'd', 'l', 'r' {
-    copy = copy of p
+    copy = make copy of p
     if (attempt to carry out move in direction on copy succeeds) {
       if (recursive call to solve_puzzle on copy succeeds) {
         // found a solution recursively!
