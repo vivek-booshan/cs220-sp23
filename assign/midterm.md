@@ -661,6 +661,36 @@ memory errors and unclosed files if you run it with the options
 
 ## Testing
 
+### Viewing Image Files
+
+Since your `puzzle` program will not have a GUI, you will use external
+programs to view the images. If you are on ugrad (either locally, or
+remotely with X-tunnelling), you can use the program `feh`.
+
+<div class='admonition info'>
+<div class='title'>Info</div>
+<div class='content'>
+<p><code>feh</code> is a very simple command-line image viewer. It is
+available on ugrad machines and you can simply run the program with the
+name of an image file as a command-line argument, and it will display
+the image on your screen. e.g.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1">$ <span class="ex">feh</span> myimage.ppm</a></code></pre></div>
+<p><strong>Note:</strong> Before running <code>feh</code>, make sure
+either Xming or Xquartz is running and x-tunneling is enabled (i.e. add
+-Y on mac when you <code>ssh</code> in to ugrad. On Putty, enable x-11
+forwarding option)</p>
+</div>
+</div>
+
+If you are using a different platform, you are welcome to use an image
+viewer of your choice; `feh` is easy to install using most linux package
+managers, but there are other open source image viewing programs, as
+well as alternatives for Windows and OSX.
+
+Also note that Visual Studio Code has the capability to display image
+files, which means if you're using VS Code, you likely won't need to
+use an external image viewer program.
+
 ### Example Inputs, Expected Outputs
 
 The files `test01.txt` through `test09.txt` are example inputs.
@@ -688,6 +718,9 @@ $ diff expected/ingo_solved_test06.txt ingo_solved_test06.txt
 
 If the `diff` and `compare` commands complete with no output, that
 means your program's output matched the expected output.
+
+Note that you will need to look at the input file (e.g., `test06.txt`)
+in order to determine which output files are created by the test.
 
 The `compare` program generates a "diff image" showing the pixels
 that differ between the compared images. You can view this diff image
