@@ -395,8 +395,11 @@ a single line of text ending with a newline (`\n`) character.
 The `V` command computes a series of moves which solve the puzzle,
 if the puzzle can be solved. The solution should be printed as a series
 of `S` commands.  For example, if the current puzzle configuration looks like
-this:
+this (note that this is a 3x3 puzzle):
 
+<div class="puzzle_layout">
+<a href="img/ingo_scrambled_3_test08.png"><img style="margin-left: 2em;" class="puzzle_img"  src="img/ingo_scrambled_3_test08.png" alt="Puzzle after moving the free tile up"></a>
+</div>
 
 Then the output of the `V` command might be
 
