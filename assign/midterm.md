@@ -393,17 +393,12 @@ should print either the output "`Solved`" or "`Not solved`" as
 a single line of text ending with a newline (`\n`) character.
 
 The `V` command computes a series of moves which solve the puzzle,
-if the puzzle can be solved. The solution should be printed on a single
-line of output (to `stdout`, ending with a newline) consisting of a series
-of move letters (`u`, `d`, `l`, and `r`). The idea is that if these moves
-are carried out in order using the `S` command, they will lead to
-a solution to the puzzle. For example, the output might be
+if the puzzle can be solved. The solution should be printed as a series
+of `S` commands.  For example, if the current puzzle configuration looks like
+this:
 
-```
-drullu
-```
 
-indicating that the puzzle can be solved using the commands
+Then the output of the `V` command might be
 
 ```
 S d
