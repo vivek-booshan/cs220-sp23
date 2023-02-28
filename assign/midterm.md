@@ -83,8 +83,8 @@ in the course public repository to make sure it's up to date. Then, change
 directory into your clone of your team repository, and run the commands
 
 ```
-cp -r ~/cs220-sp23-public/project/midterm/* .
-cp ~/cs220-sp23-public/project/midterm/.gitignore .
+cp -r ~/cs220-sp23-public/projects/midterm/* .
+cp ~/cs220-sp23-public/projects/midterm/.gitignore .
 ```
 
 to copy the starter files to your team repository. Finally, use
