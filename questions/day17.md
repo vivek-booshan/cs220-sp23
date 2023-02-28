@@ -1,16 +1,17 @@
 ---
+layout: default
 id: day17_questions
 title: Day 17 Recap Questions
 reference solutions:
-  1. HEAD -> [Node 1 | next-]-> [Node 2 | next-]-> ... [Node n | next-]-> NULL
-  2. Array is linear in memory, so it is faster to access elements by indexing, but it has a fixed size and inserting new element is expensive. Linked list has a dynamic size and we can insert new element more efficiently, but it requires more memory space (to store links) and is slower in access (by traversing the whole list). 
-  3. HEAD is a just pointer to the first node or NULL if it is an empty list, while a node contains the data and a pointer to the next node or NULL if it is a tail. 
-  4. We traverse the list starting from the HEAD pointer, advance using the next pointer until it reaches the end (i.e. NULL). Increase the length by 1 for each advancement.
-  5. First, we allocate a new node for the new data and set its next pointer to be the same as the current node's next pointer, where current node is the node that we want to insert the data after. Lastly, we update the current node's next pointer to point to this new node.
+  1. We first create the new node with the new data and set its next pointer to what the HEAD is pointing to. Then, we update the HEAD pointer to point to the new node.
+  2. Doubly linked list is a bi-directional linked list. We can add another pointer field called previous and use it to point to the previous node. The first node's previous pointer would be NULL.
+  3. We need a deep copy. We traverse the list and create new node from the old one. We need to pay attention to how to setup the next pointer for the new list. It should point to the newly created node.
+  4. Because we need to change the HEAD pointer, we need to use pointer-to-pointer in the add_front function, so that we can change the HEAD pointer value in the function. 
+  5. An empty list.
 ---
 
-1. Describe the linked list structure by a diagram.
-2. Compare arrays and linked lists. Write down their pros and cons.
-3. What is a linked list's head? How is it different from a node? Explain. 
-4. How do you calculate `length` of a linked list?
-5. How do you implement `add_after` on a singly linked list?
+1. How do you implement *add_front* on a linked list?
+2. How do you modify a singly linked list to create a doubly linked list?
+3. How do you make a copy of a singly linked list?
+4. Why does *add_after* takes a `Node *` as input, but *add_front* takes `Node **`?
+5. What cases should be handled when implementing *remove_front*?

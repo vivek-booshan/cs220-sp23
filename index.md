@@ -46,6 +46,10 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **Feb 27** — The Midterm Exam will take place in class on **Friday, March 10th**.
+  Review materials are available on the [Resources](resources.html) page.
+* **Feb 26** — Homework 4 is due **Friday, Mar 3rd** on Gradescope. Because it is a
+  written assignment, late days may not be used. Please plan accordingly.
 * **Feb 19** — Updated [Homework 3](assign/hw3.html) to specify that error messages
   should be printed to `stderr`.
 * **Feb 17** — [Homework 3](assign/hw3.html) is due **Friday, Feb 24th** by 11pm.
