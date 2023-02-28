@@ -636,18 +636,38 @@ img->rows = /* number of rows of pixels */;
 img->cols = /* number of columns of pixels */;
 ```
 
-## Memory Correctness
+## Memory Correctness, Closing Files
 
+<!--
 TODO: the program needs to be free of memory leaks and other memory errors
 (such as out of bounds array accesses), should use valgrind when testing
+-->
+
+Your program should be free from memory errors, including
+
+* Out of bounds array accesses
+* Invalid pointer dereferences
+* Memory leaks
+
+We also expect that any file opened by the program will be closed
+before the program exits.
+
+Make sure that you are using `valgrind` frequently: it can detect both
+memory errors and unclosed files if you run it with the options
+
+```
+--leak-check=full --show-leak-kinds=all
+```
 
 # Testing
 
+<!--
 TODO: it's expected that there will be a test program (`puzzle_tests`)
 which has unit tests for as many helper functions as possible. Basically,
 any helper function that can be tested in a straightforward way
 should have a test. Teams should expect to invest around the same amount
 of effort in writing tests as in implementing the functions being tested.
+-->
 
 ## Packaging
 
