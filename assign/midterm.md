@@ -659,7 +659,7 @@ memory errors and unclosed files if you run it with the options
 --leak-check=full --show-leak-kinds=all
 ```
 
-# Testing
+## Testing
 
 <!--
 TODO: it's expected that there will be a test program (`puzzle_tests`)
@@ -669,14 +669,46 @@ should have a test. Teams should expect to invest around the same amount
 of effort in writing tests as in implementing the functions being tested.
 -->
 
-## Packaging
+# Packaging, Submission
 
-TODO: the files submitted should include `puzzle.h`, `puzzle_funcs.c`,
-`puzzle.c`, `puzzle_tests.c`, `Makefile`, `README`, and `gitlog.txt`.
-Please do not include any PPM image files.
-
+<!--
 TODO: expectations for what targets the Makefile should have
+-->
 
-TODO: describe what the README should contain
+Your `Makefile` should have a target for the `puzzle` executable.
+This target should be the default target of the `Makefile`.
+Optionally, you can have a target for a test program for unit testing
+your functions. While we highly recommend that you write unit tests,
+it's not required.
 
-TODO: instructions for preparing a zipfile to upload to Gradescope
+You should include a `README` file listing the names and JHED IDs of the team members, as
+well as a brief summary of the contributions of each team member.
+You can also use the `README` to discuss anything interesting about
+the implementation. If there was functionality that you weren't
+able to get working, you should mention it here.
+
+You will need to prepare a `gitlog.txt` listing the commits to the project
+repository:
+
+```
+git log > gitlog.txt
+```
+
+When you submit your code to Gradescope, the files submitted should include
+
+* all `.c` source files
+* all `.h` header files
+* the `Makefile`
+* `gitlog.txt`
+* the `README`
+
+Do **not** include any PPM image files in your submission.
+
+You could use the following command to generate your zipfile:
+
+```
+zip -9r solution.zip *.c *.h Makefile gitlog.txt README
+```
+
+When you upload to Gradescope, make sure each team member is added to the
+submission.
