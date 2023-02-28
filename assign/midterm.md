@@ -96,16 +96,6 @@ files.
 
 ## Example of Program Functionality
 
-<!--
-TODO: brief example of program functionality (corresponding to one of
-the test inputs in the starter code). Possible format could be:
-
-* input file
-* background image
-* sequence of transformations on the puzzle (both tile locations
-  and expected result image)
--->
-
 This section shows a quick example of how the program works.
 
 The example input shown here is in the file `test06.txt` included in
@@ -221,18 +211,8 @@ After all of the "S" commands complete, the puzzle is in its
 
 ## Program Structure, Data Types
 
-<!--
-TODO: describe how source/header files are organized (data types
-and function prototypes go in `puzzle.h`, helper functions go
-in `puzzle_funcs.c`, main function goes in `puzzle.c`)
--->
 The header file `puzzle.h` should have all of the common struct data types
 and function declarations for the overall program.
-
-<!--
-TODO: it's a requirement to have a data type to represent the
-instance of the puzzle (i.e., `typedef struct { /*...*/ } Puzzle;`
--->
 
 The header file should define a struct data type called `Puzzle`.
 An instance of this data type represents the current configuration
@@ -255,13 +235,6 @@ the tile numbered $$N^{2}$$, meaning that in a solved puzzle, the
 gap will be in the lower right. However, your program should not
 hard-code this assumption.
 
-<!--
-TODO: it's a requirement to have appropriate helper functions
-to do operations on an instance of the puzzle data type
-(could list a few suggestions, e.g., `puzzle_create`,
-`puzzle_set_tile`, etc.)
--->
-
 Your program is required to use functions to modularize the
 overall functionality of the program. In particular, your program
 should have a set of functions for creating, performing operations
@@ -276,13 +249,6 @@ void puzzle_destroy(Puzzle *p);
 void puzzle_set_tile(Puzzle *p, int col, int row, int value);
 int puzzle_get_tile(const Puzzle *p, int col, int row);
 ```
-
-<!--
-TODO: we expect that the program will use functions throughout the
-program to simplify its implementation. For example, have one
-function to implement each kind of supported command
-(see the [Input Format](#input-format) section)
--->
 
 We also expect you to use functions to modularize the implementation
 of the variuos commands suppored in the [Input Format](#input-format).
@@ -311,17 +277,6 @@ The input to the program (either read from a named file or read from
 `stdin`) is a series of commands.  Each command consists of a capital
 letter. Some specific commands also require argument values which follow
 the command letter.
-
-<!--
-  // C <size>                         create puzzle of specified size
-  // T <sequence of tile numbers...>  set initial state of puzzle
-  // I <filename>                     set the base image filename
-  // P                                print the current state of the puzzle (tile numbers)
-  // W <img filename> <cfg filename>  write image file representing current state of puzzle
-  // S <dir>                          slide free tile in given direction (u, d, l, or r)
-  // K                                check to see whether the puzzle is in the "winning" configuration
-  // Q                                quit the program
--->
 
 Here is a list of commands and their arguments:
 
@@ -479,11 +434,6 @@ should exit normally (with an exit code of 0.)
 
 ## Running the Program
 
-<!--
-TODO: invoking the program (0 args means read commands from stdin, 1 arg
-means read commands from input file)
--->
-
 The program executable should be named "`puzzle`".
 
 There are two ways to invoke the program. If invoked without command line
@@ -505,17 +455,6 @@ then the program should read commands from the file named by the
 command line argument.
 
 ## Error Handling
-
-<!--
-TODO: the various kinds of errors that must be handled. Important
-points:
-
-* All error messages are printed to stderr
-* All errors are "fatal" (cause the program to exit with exit code 1
-  after printing the error message)
-* Error message text is exact (we should give them a table based on
-  the error messages from the reference solution)
--->
 
 There are two kinds of situations where an error occurs:
 
@@ -575,17 +514,6 @@ the `V` command (to compute a sequence of moves to solve the puzzle.)
 
 ## Reading and Writing PPM Files
 
-<!--
-TODO: brief description of PPM format (copy from image processing assignment?)
-
-TODO: ways of viewing PPM files (remote X and feh program, view in VS Code)
-
-TODO: brief description of how PPM files are used in the assignment,
-in I command (read into memory) and W command (write an result image by
-"carving up" the original image according to the current configuration of
-the tiles in the puzzle)
--->
-
 The `ppm_io.h` and `ppm_io.c` header and source files implement support
 for reading and writing [PPM](https://en.wikipedia.org/wiki/Netpbm)
 image files. You should read the code in these files so that you
@@ -641,11 +569,6 @@ img->cols = /* number of columns of pixels */;
 ```
 
 ## Memory Correctness, Closing Files
-
-<!--
-TODO: the program needs to be free of memory leaks and other memory errors
-(such as out of bounds array accesses), should use valgrind when testing
--->
 
 Your program should be free from memory errors, including
 
@@ -799,10 +722,6 @@ int main(void) {
 ```
 
 # Packaging, Submission
-
-<!--
-TODO: expectations for what targets the Makefile should have
--->
 
 Your `Makefile` should have a target for the `puzzle` executable.
 This target should be the default target of the `Makefile`.
