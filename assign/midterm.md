@@ -507,10 +507,81 @@ code 1.
 
 ## Solving the Puzzle
 
-This section describes the algorithm you should implement to handle
+This section describes the type of algorithm you should implement to handle
 the `V` command (to compute a sequence of moves to solve the puzzle.)
 
-*TODO: write this section*
+<div class='admonition caution'>
+<div class='title'>Caution</div>
+<div class='content'>
+<p>
+  Solving the puzzle will involve an algorithm with an exponential running
+  time. For this reason, we will only expect your program's
+  <code class='highlighter-rouge'>V</code> command
+  to work if the puzzle size is 3x3.
+</p>
+</div>
+</div>
+
+You can implement a computation to find a solution to the puzzle using
+a branching recursive search strategy somewhat similar to the regular
+expression matching algorithm you implemented in [Homework 3](hw3.html).
+
+This algorithm is described by the following pseudo-code:
+
+```
+// Parameters:
+//   p - a Puzzle
+//   steps - array of directions (u/d/l/r)
+//   max_steps - maximum number of steps to try
+//   cur_steps - how many steps have been considered so far
+function solve_puzzle(p, steps[], max_steps, cur_steps) {
+  if (p is solved)
+    return cur_steps   // steps array has a complete sequence of steps
+
+  if (cur_steps >= max_steps)
+    return FAILURE     // we reached the max number of steps
+
+  for direction in 'u', 'd', 'l', 'r' {
+    copy = copy of p
+    if (attempt to carry out move in direction on copy succeeds) {
+      if (recursive call to solve_puzzle on copy succeeds) {
+        // found a solution recursively!
+        place direction in appropriate element of steps array
+        return number of steps in recursive solution
+      }
+    }
+  }
+
+  return FAILURE    // attempts to solve recursively did not succeed
+}
+```
+
+Note that the algorithm described above is a completely brute-force
+approach. There are a couple of ways to enhance the algorithm that could
+be helpful.
+
+First, we probably don't want to consider moves in a direction that is
+the opposite of the direction in the previous move. For example, it would
+be silly to consider a `d` move if the previous move was `u`.
+This could be addressed by adding a parameter to indicate what the previous
+move direction was (if any, since the first move considered won't have
+a previous move.)
+
+Second, rather than hard-coding the order of the directions considered,
+the algorithm could use a heuristic to rank the candidates. One way to
+approach this would be to first create the candidate puzzle copies
+corresponding moves in each direction, and then analyze each candidate to
+determine how "close" it is to a complete solution. For example,
+you could compute the sum of the [Manhattan Distance](https://en.wikipedia.org/wiki/Taxicab_geometry)s
+of each tile from where they would be located in the solution.
+The algorithm would then try to find recursive solutions by starting with
+the "best" candidate (i.e., closest to a solution), and if no solution
+can be found in that candidate, proceed to the next best candidate, etc.
+
+Note that this algorithm will return the *first* solution it finds,
+which is not necessarily the *best* solution. You may want to start
+by restricting the search to find a "short" solution, and then gradually
+easing this restriction.
 
 ## Reading and Writing PPM Files
 
