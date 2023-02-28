@@ -434,7 +434,34 @@ should print either the output "`Solved`" or "`Not solved`" as
 a single line of text ending with a newline (`\n`) character.
 
 The `V` command computes a series of moves which solve the puzzle,
-if the puzzle can be solved. *TODO: more description here*
+if the puzzle can be solved. The solution should be printed on a single
+line of output (to `stdout`, ending with a newline) consisting of a series
+of move letters (`u`, `d`, `l`, and `r`). The idea is that if these moves
+are carried out in order using the `S` command, they will lead to
+a solution to the puzzle. For example, the output might be
+
+```
+drullu
+```
+
+indicating that the puzzle can be solved using the commands
+
+```
+S d
+S r
+S u
+S l
+S l
+S u
+```
+
+See the [Solving the Puzzle](#solving-the-puzzle) section for a discussion
+of how to implement an algorithm to search for a solution.
+Note that your program is not required to find a *specific* solution
+to solve the puzzle. It just needs to find a *valid* solution.
+
+If a solution can't be found, the program should print the output
+"`No solution found`" as a single line of text (ending with a newline.)
 
 The `Q` command quits the program. The program should exit with an
 exit code of 0 when the `Q` command is executed.
@@ -500,7 +527,7 @@ When an error is encountered, the program must
 2. Exit the program with an exit code of 1
 
 Note that there are no "recoverable" errors. I.e., if an error occurs,
-the program never continues reading commands.
+the program does not continue reading commands.
 
 This table summarizes the errors that should be handled, and the
 error message that should be printed:
