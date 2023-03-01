@@ -199,7 +199,7 @@ After all of the "S" commands complete, the puzzle is in its
   <td>9</td><td>10</td><td>11</td><td>12</td>
  </tr>
  <tr>
-  <td>13</td><td>14</td><td>15</td><td class="gap">12</td>
+  <td>13</td><td>14</td><td>15</td><td class="gap"></td>
  </tr>
 </table>
 <a href="img/ingo_solved.png"><img style="margin-left: 2em;" class="puzzle_img"  src="img/ingo_solved.png" alt="Solved puzzle image"></a>
