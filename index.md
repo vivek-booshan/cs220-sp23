@@ -46,6 +46,9 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **Mar 1** — The [Midterm Project](assign/midterm.html) is due
+  **Friday, March 17th** by 11pm. Note that late submissions will not be
+  accepted.
 * **Feb 27** — The Midterm Exam will take place in class on **Friday, March 10th**.
   Review materials are available on the [Resources](resources.html) page.
 * **Feb 26** — Homework 4 is due **Friday, Mar 3rd** on Gradescope. Because it is a

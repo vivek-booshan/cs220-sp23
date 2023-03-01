@@ -31,10 +31,6 @@ title: "Midterm Project"
 </div>
 </div>
 
-<div style="font-size: 140%; font-style: italic; text-align: center;">
-  Preliminary project description, not official yet
-</div>
-
 # Overview
 
 In this project, you will implement a program to perform operations
