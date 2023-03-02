@@ -295,7 +295,7 @@ the materials for that week.
       <td>Slides</td>
       <td><a href='slides/day16_linked_lists.pdf'>Linked lists</a></td>
       <td><a href='slides/day17_more_linked_lists.pdf'>More Linked lists</a></td>
-      <td>Midterm project</td>
+      <td><a href='slides/sp23_day18.pdf'>Midterm project</a></td>
     </tr>
     <tr>
       <td>Recap<br>Questions</td>
