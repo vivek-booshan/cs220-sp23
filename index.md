@@ -46,6 +46,9 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **Mar 6** — The [Midterm Project](assign/midterm.html) has been updated with
+  better information about software you will need to
+  [preview PPM images](assign/midterm.html#viewing-image-files).
 * **Mar 1** — The [Midterm Project](assign/midterm.html) is due
   **Friday, March 17th** by 11pm. Note that late submissions will not be
   accepted.

@@ -31,6 +31,9 @@ title: "Midterm Project"
 </div>
 </div>
 
+*Update 3/6*: Better information about previewing images added to the
+<a href="#viewing-image-files">Viewing Image Files</a> section.
+
 # Overview
 
 In this project, you will implement a program to perform operations
@@ -674,6 +677,9 @@ the image on your screen. e.g.</p>
 either Xming or Xquartz is running and x-tunneling is enabled (i.e. add
 -Y on mac when you <code>ssh</code> in to ugrad. On Putty, enable x-11
 forwarding option)</p>
+<p>Note <a href="https://www.xquartz.org/">XQuartz</a> (Mac OS) and
+<a href="https://sourceforge.net/projects/xming/">XMing</a> (Windows)
+will need to be downloaded and installed before you can use them.</p>
 </div>
 </div>
 
@@ -684,7 +690,10 @@ well as alternatives for Windows and OSX.
 
 Also note that Visual Studio Code has the capability to display image
 files, which means if you're using VS Code, you likely won't need to
-use an external image viewer program.
+use an external image viewer program. Note that you will need
+a VS Code extension to be able to view PPM images:
+
+<a style="margin-left: 2em;" href="https://marketplace.visualstudio.com/items?itemName=ngtystr.ppm-pgm-viewer-for-vscode">https://marketplace.visualstudio.com/items?itemName=ngtystr.ppm-pgm-viewer-for-vscode</a>
 
 ### Example Inputs, Expected Outputs
 
