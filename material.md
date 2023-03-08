@@ -375,6 +375,57 @@ the materials for that week.
   </tbody>
 </table>
 </div>
+<button type="button" id="week_8_toggle" class="week_control_button">Week 8 (13-Mar to 17-Mar)</button>
+<div id="week_8" class="collapsible">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Day 22 (13-Mar)</th>
+      <th>Day 23 (15-Mar)</th>
+      <th>Day 24 (17-Mar)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Videos</td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2760c264-312d-49f2-9e43-ae2300279acb'>Introduction to C++</a><br><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=954ea030-61b3-482d-96e8-ae2300279a4f'>C++ Strings</a></td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=04905da6-f193-4a6e-9f3e-ae2300279736'>Introduction to STL and templates</a></td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c12342a6-6af3-4859-9da6-ae2300279661'>STL Containers - map, pair, and tuple</a><br><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c08d312c-963d-485b-84bf-ae23002796be'>STL Algorithms</a></td>
+    </tr>
+    <tr>
+      <td>Slides</td>
+      <td><a href='slides/day22_intro_cpp.pdf'>Introduction to C++</a><br><a href='slides/day22_cpp_strings.pdf'>C++ Strings</a></td>
+      <td><a href='slides/day23_stl_templates.pdf'>Introduction to STL and templates</a></td>
+      <td><a href='slides/day24_more_stl_containers.pdf'>STL Containers - map, pair, and tuple</a><br><a href='slides/day24_stl_algorithms.pdf'>STL Algorithms</a></td>
+    </tr>
+    <tr>
+      <td>Recap<br>Questions</td>
+      <td><a href='questions/day22.html'>Day 22</a></td>
+      <td><a href='questions/day23.html'>Day 23</a></td>
+      <td><a href='questions/day24.html'>Day 24</a></td>
+    </tr>
+    <tr>
+      <td>Exercise</td>
+      <td>N/A</td>
+      <td><a href='exercise/ex23.html'>Exercise 23</a></td>
+      <td><a href='exercise/ex24.html'>Exercise 24</a></td>
+    </tr>
+    <tr>
+      <td>Additional<br>Resources</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lecture<br>Slides</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 <script type="text/javascript">
   // Create and register a click handler for button clicks to expand/contract
   // specified content div
