@@ -28,7 +28,7 @@ Use the links at the top of the page to navigate the site.
 team collaborations as well as group and individual
 source code version control. Scaffolding/starter files of
 exercises, homeworks, and projects are shared via the course
-<a class="external" target="_blank" href="https://github.com/jhu-ip/cs220-summer22-public">public repository</a>.
+<a class="external" target="_blank" href="https://github.com/jhu-ip/cs220-sp23-public">public repository</a>.
 You may never share your private repository with anyone else.
 
 <a class="external" target="_blank" href="https://piazza.com/jhu/spring2023/en601220/home">Piazza</a> is
