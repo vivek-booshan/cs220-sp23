@@ -34,6 +34,9 @@ title: "Midterm Project"
 *Update 3/6*: Better information about previewing images added to the
 <a href="#viewing-image-files">Viewing Image Files</a> section.
 
+*Update 3/13*: Clarify that $$N^{2}$$ is a valid tile number, where
+$$N$$ is the number of puzzle rows/columns.
+
 # Overview
 
 In this project, you will implement a program to perform operations
@@ -234,7 +237,9 @@ the "gap" (missing tile).  A valid initialized puzzle should always
 have exactly one gap tile. By convention, puzzles will omit
 the tile numbered $$N^{2}$$, meaning that in a solved puzzle, the
 gap will be in the lower right. However, your program should not
-hard-code this assumption.
+hard-code this assumption. In other words, your program must be able
+to correctly handle puzzles where, when the puzzle is solved, the
+gap is not in the lower-right corner.
 
 Your program is required to use functions to modularize the
 overall functionality of the program. In particular, your program
