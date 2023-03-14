@@ -46,6 +46,8 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **Mar 14** — The [Schedule](schedule.html) has been updated to move homework
+  assignment due dates to allow more time to work on the final project.
 * **Mar 6** — The [Midterm Project](assign/midterm.html) has been updated with
   better information about software you will need to
   [preview PPM images](assign/midterm.html#viewing-image-files).
