@@ -292,7 +292,7 @@ Command | Description
 <code class='highlighter-rouge'>T <i>tile...</i></code> | Initialize puzzle configuration with series of tile numbers
 <code class='highlighter-rouge'>I <i>filename</i></code> | Load the background image from specified PPM file
 <code class='highlighter-rouge'>P</code> | Print sequence of tile numbers reflecting current puzzle configuration
-<code class='highlighter-rouge'>W <i>filename1</i> <i>filename</i></code> | Write puzzle image to <i>filename1</i> and puzzle configuration to <i>filename2</i>
+<code class='highlighter-rouge'>W <i>filename1</i> <i>filename2</i></code> | Write puzzle image to <i>filename1</i> and puzzle configuration to <i>filename2</i>
 <code class='highlighter-rouge'>S <i>direction</i></code> | Slide a free tile in specified direction
 <code class='highlighter-rouge'>K</code> | Check to see whether the puzzle is in the "winning" configuration
 <code class='highlighter-rouge'>V</code> | Compute a series of moves to solve the puzzle
