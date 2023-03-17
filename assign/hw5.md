@@ -98,7 +98,7 @@ In all cases, extra command-line arguments specified on the command line after t
 ## Sample Runs
 Suppose the list of training texts input for your program resides in a file named [tiny_ex.txt](https://jhu-ip.github.io/cs220_f20/hw/tiny_ex.txt), and the contents of the file are names of text files containing excerpts from Dr. Seuss books as follows (click the links to see the contents of the two text files, or view them in the public repo):
 
-[sl.txt](https://github.com/jhu-ip/cs220-sp23-public/tree/master/homework/hw5/s1.txt)
+[sl.txt](https://github.com/jhu-ip/cs220-sp23-public/tree/master/homework/hw5/sl.txt)
 
 [ge.txt](https://github.com/jhu-ip/cs220-sp23-public/tree/master/homework/hw5/ge.txt)
 
