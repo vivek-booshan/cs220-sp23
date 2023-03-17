@@ -20,7 +20,7 @@ Homework 2 (on [Gradescope](https://www.gradescope.com/) as<br>"HW 2: C basics (
 Homework 4 (on [Gradescope](https://www.gradescope.com/) as<br>"HW 4: C pointers, structs, bits (written)" | Due Friday, Mar 3rd<br>(no late submissions)
 Midterm exam | Friday, March 10th (in class)
 [Midterm project](assign/midterm.html) | Due Friday, Mar 17th<br>(no late submissions)
-Homework 5 | Due Friday, Mar 31st
+[Homework 5](assign/hw5.html) | Due Friday, Mar 31st
 Homework 6 | Due Friday, Apr 7th<br>(no late submissions)
 Homework 7 | Due Friday, 14th
 Final project | Due Friday, Apr 28th

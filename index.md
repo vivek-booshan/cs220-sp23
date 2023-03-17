@@ -46,6 +46,8 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **March 17** — [Homework 5](assign/hw5.html) is due **Friday, March 31st** by 11pm.
+* **March 16** — Midterm Project Deadline is extended to **Monday, March 27th**, 11pm.
 * **Mar 14** — The [Schedule](schedule.html) has been updated to move homework
   assignment due dates to allow more time to work on the final project.
 * **Mar 6** — The [Midterm Project](assign/midterm.html) has been updated with
