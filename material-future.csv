@@ -1,21 +1,3 @@
-9,1,27-Mar,Video,C++ I/O stream and stringstream,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f35cdf8e-80d0-4d88-b9e3-ae2300279562
-9,1,27-Mar,Video,Intro to Object Oriented Programming,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=090adf84-0330-4c2f-9c73-ae230027a599
-9,1,27-Mar,Slides,C++ I/O stream and stringstream,slides/day25_cpp_file_io_stringstream.pdf
-9,1,27-Mar,Slides,Intro to Object Oriented Programming,slides/day25_intro_to_oo.pdf
-9,1,27-Mar,Recap,Day 25,questions/day25.html
-9,1,27-Mar,Exercise,Exercise 25,exercise/ex25.html
-9,2,29-Mar,Video,References,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4fcd7033-f754-429f-b55b-ae230027a516
-9,2,29-Mar,Video,Dynamic Memory Allocation,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d9978853-6c9b-4cc3-b62d-ae230027a4cc
-9,2,29-Mar,Slides,References,slides/day26_cpp_reference.pdf
-9,2,29-Mar,Slides,Dynamic Memory Allocation,slides/day26_dynamic_memory_allocation.pdf
-9,2,29-Mar,Recap,Day 26,questions/day26.html
-9,2,29-Mar,Exercise,Exercise 26,exercise/ex26.html
-9,3,31-Mar,Video,C++ Classes,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5a1a7afe-6165-4e33-9567-ae230027a431
-9,3,31-Mar,Video,Default Constructors,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0e485b33-028d-45e6-be18-ae230027a3d3
-9,3,31-Mar,Slides,C++ Classes,slides/day27_cpp_classes.pdf
-9,3,31-Mar,Slides,Default Constructors,slides/day27_default_constructor.pdf
-9,3,31-Mar,Recap,Day 27,questions/day27.html
-9,3,31-Mar,Exercise,Exercise 27,exercise/ex27.html
 10,1,3-Apr,Video,Constructors and default arguments,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=62080530-d06e-4a0e-be06-ae230027a050
 10,1,3-Apr,Video,Destructors,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea9792a-afab-4319-85f1-ae2300279fe3
 10,1,3-Apr,Slides,Constructors and default arguments,slides/day28_constructors.pdf
