@@ -179,6 +179,8 @@ Week,Day,Date,Type,Link text,URL
 8,3,17-Mar,Slides,STL Algorithms,slides/day24_stl_algorithms.pdf
 8,3,17-Mar,Recap,Day 24,questions/day24.html
 8,3,17-Mar,Exercise,Exercise 24,exercise/ex24.html
+8,3,17-Mar,LectureSlides,"Day 24 Notes (Sec 03)",slides/notes/sp23_day24_sec03.pdf
+8,3,17-Mar,LectureSlides,"Day 24 Notes (Sec 04)",slides/notes/sp23_day24_sec04.pdf
 9,1,27-Mar,Video,C++ I/O stream and stringstream,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f35cdf8e-80d0-4d88-b9e3-ae2300279562
 9,1,27-Mar,Video,Intro to Object Oriented Programming,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=090adf84-0330-4c2f-9c73-ae230027a599
 9,1,27-Mar,Slides,C++ I/O stream and stringstream,slides/day25_cpp_file_io_stringstream.pdf
