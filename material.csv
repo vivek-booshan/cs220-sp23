@@ -204,6 +204,8 @@ Week,Day,Date,Type,Link text,URL
 9,3,31-Mar,Slides,Default Constructors,slides/day27_default_constructor.pdf
 9,3,31-Mar,Recap,Day 27,questions/day27.html
 9,3,31-Mar,Exercise,Exercise 27,exercise/ex27.html
+9,3,31-Mar,LectureSlides,"Day 27 Notes (Sec 03)",slides/notes/sp23_day27_sec03.pdf
+9,3,31-Mar,LectureSlides,"Day 27 Notes (Sec 04)",slides/notes/sp23_day27_sec04.pdf
 10,1,3-Apr,Video,Constructors and default arguments,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=62080530-d06e-4a0e-be06-ae230027a050
 10,1,3-Apr,Video,Destructors,https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ea9792a-afab-4319-85f1-ae2300279fe3
 10,1,3-Apr,Slides,Constructors and default arguments,slides/day28_constructors.pdf

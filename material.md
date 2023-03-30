@@ -472,7 +472,7 @@ the materials for that week.
       <td>Lecture<br>Slides</td>
       <td><a href='slides/notes/sp23_day25_sec01.pdf'>Day 25 Notes (Sec 01)</a><br><a href='slides/notes/sp23_day25_sec03.pdf'>Day 25 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day25_sec04.pdf'>Day 25 Notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day26_sec03.pdf'>Day 26 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day26_sec04.pdf'>Day 26 Notes (Sec 04)</a></td>
-      <td></td>
+      <td><a href='slides/notes/sp23_day27_sec03.pdf'>Day 27 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day27_sec04.pdf'>Day 27 Notes (Sec 04)</a></td>
     </tr>
   </tbody>
 </table>
