@@ -80,9 +80,11 @@ The first argument after the `hw5` command should be considered the list of file
 Invalid file list: my_list.txt
 ```
 If the file list **can** be opened, it is possible that one of the names in the list denotes a training data file which cannot be opened. In that case, your program should output an extra line of output like this (where `file5.txt` is the name of the file that cannot be opened) at the moment the file open fails
+<s>
 ```
-<s>Invalid file list: file5.txt</s>
+Invalid file list: file5.txt
 ```
+</s>
 ```
 Invalid file: file5.txt
 ```
