@@ -81,8 +81,12 @@ Invalid file list: my_list.txt
 ```
 If the file list **can** be opened, it is possible that one of the names in the list denotes a training data file which cannot be opened. In that case, your program should output an extra line of output like this (where `file5.txt` is the name of the file that cannot be opened) at the moment the file open fails
 ```
-Invalid file list: file5.txt
+<s>Invalid file list: file5.txt</s>
 ```
+```
+Invalid file: file5.txt
+```
+
 to indicate which file could not be processed, but the program should **continue to read** in all other listed files as usual, and output the results based on the data in the files it is able to open. The program should output one `Invalid file:` line per each file in the file list that it is unable to open.
 
 Valid command letters are `a`, `d`, `c`, and `f`. Once the list of files has been found to be valid and data has been collected to create your model, if your program finds that the user inputs any other value as its second argument (even a string such as alpha) or no second argument at all, output the line below and exit the program immediately:
