@@ -52,26 +52,26 @@ Below are a list of functions you need to implement and some tips for the implem
 
 (3). Copy constructor: applying the rule of 3, we will have a non-trivial destructor so we should implement the copy constructor for a deep copy.
 
-<div class='admonition info'>
-<div class='title'>Starter files!</div>
+<div class='admonition tip'>
+<div class='title'>Tip</div>
 <div class='content'>
 <ul>
 <li>For constructors, remember to make good use of member initializer lists. </li>
-<li>You may want to implement `operator=` first and reuse it to implement the copy constructor.</li>
+<li>You may want to implement <code class='highlighter-rouge'>operator=</code> first and reuse it to implement the copy constructor.</li>
 </ul>
 </div>
 </div>
 (4). `operator=(DataLoop)`: applying the rule of 3, we will have a non-trivial destructor so we should implement the assignment operator for a deep copy.
 
 <div class='admonition tip'>
-<div class='title'>Starter files!</div>
+<div class='title'>Tip</div>
 <div class='content'>
 <ul>
 <li>When you implement your copy logic, draw it out on paper. That will help to figure out how to update the pointers.</li>
 
 <li>For the assignment operator, if you reallocate memory, make sure there are no memory leaks.</li>
 
-<li>You may want to implement `operator+=` first and reuse it to implement the assignment operator.</li>
+<li>You may want to implement <code class='highlighter-rouge'>operator+=</code> first and reuse it to implement the assignment operator.</li>
 </ul>
 </div>
 </div>
@@ -89,10 +89,12 @@ Below are a list of functions you need to implement and some tips for the implem
 <div class='title'>operator+</div>
 <div class='content'>
 <p>
-The `operator+` assigns the result to a new variable, not to the implicit object. e.g. consider `a = b + c`. `b + c` is the same as `b.operator+(c)`.  The implicit object `b` remains unchanged after calling `b.operator+(c)`, as does explicit parameter `c`. `b.operator+(c)` returns the concatenated result and it is then assigned to `a` in this example using the assignment operator.
-
-You may want to use other operators/functions to implement `operator+`.
+The <code class='highlighter-rouge'>operator+</code> assigns the result to a new variable, not to the implicit object. e.g. consider <code class='highlighter-rouge'>a = b + c</code>. <code class='highlighter-rouge'>b + c</code> is the same as <code class='highlighter-rouge'>b.operator+(c)</code>.  The implicit object <code class='highlighter-rouge'>b</code> remains unchanged after calling <code class='highlighter-rouge'>b.operator+(c)</code>, as does explicit parameter <code class='highlighter-rouge'>c</code>. <code class='highlighter-rouge'>b.operator+(c)</code> returns the concatenated result and it is then assigned to <code class='highlighter-rouge'>a</code> in this example using the assignment operator.
 </p>
+
+<p>
+</p>
+You may want to use other operators/functions to implement <code class='highlighter-rouge'>operator+</code>.
 </div>
 </div>
 
