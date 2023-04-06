@@ -46,6 +46,8 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **April 6th** — [Homework 7](assign/hw7.html) is due **Friday, April 14th** by 11pm.
+* **March 31** — [Homework 6](assign/hw6.html) is due **Friday, April 7th** by 11pm.
 * **March 17** — [Homework 5](assign/hw5.html) is due **Friday, March 31st** by 11pm.
 * **March 16** — [Midterm Project](assign/midterm.html) deadline is extended to **Monday, March 27th**, 11pm.
 * **Mar 14** — The [Schedule](schedule.html) has been updated to move homework
