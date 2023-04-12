@@ -84,14 +84,14 @@ The detailed semantics of the various directives are described below.
 
 To get started on the project, use `git clone` to clone the final project
 repository we have created for you. Also, use `git pull` to make sure that
-your clone of the `cs220-summer22-public` repository is up to date.
+your clone of the `cs220-sp23-public` repository is up to date.
 Then, copy the starter files into your final project repository.
 Assuming your current directory is your clone of your team's final project
 repository, you could use the following commands to copy the files:
 
 ```
-cp -r ~/cs220-summer22-public/projects/final/* .
-cp ~/cs220-summer22-public/projects/final/.gitignore .
+cp -r ~/cs220-sp23-public/projects/final/* .
+cp ~/cs220-sp23-public/projects/final/.gitignore .
 ```
 
 Once you have copied the starter files, use `git add`, `git commit`,
