@@ -119,7 +119,7 @@ on Gradescope individually.
 
 The `Makefile` should produce an executable called `plot`. As always,
 we expect your code to compile without warnings with the compiler
-options `-std=c++11 -Wall -Wextra -pedantic`. You can use the provided
+options `-std=c++14 -Wall -Wextra -pedantic`. You can use the provided
 `Makefile`, although if you want to write your own, or modify the
 provided one, you can.
 
@@ -437,6 +437,18 @@ In the formulas shown below,
 * $$f$$ is a function (given a value $$x$$, compute a corresponding value $$y$$)
   from the `Function` directive specifying the function being plotted
 
+<div class="admonition caution">
+  <div class='title'>Caution</div>
+  <div class='content'>
+   <p>
+   In implementing code to perform these computations, be careful to
+   avoid integer division. Each computation involving a division
+   should be performed as a <i>floating point</i> division
+   (e.g., using <code class='highlighter-rouge'>double</code> values.)
+   </p>
+  </div>
+</div>
+
 *Fill operations.* When rendering fill operations, each pixel represents a specific point
 in the x/y coordinate plane. For the pixel at row $$i$$ and column $$j$$,
 the corresponding point in the x/y plane is
@@ -445,11 +457,11 @@ $$(x_{j}, y_{i})$$
 
 where
 
-$$x_{j} = x_{min} + j/w \times (x_{max}-x_{min})$$
+$$x_{j} = x_{min} + (j/w) \times (x_{max}-x_{min})$$
 
 and
 
-$$y_{i} = y_{min} + (h-1-i)/h \times (y_{max}-y_{min})$$
+$$y_{i} = y_{min} + ((h-1-i)/h) \times (y_{max}-y_{min})$$
 
 By determining the precise x/y coordinates of a pixel, you can determine
 whether that point is above/below/between a function or functions,
