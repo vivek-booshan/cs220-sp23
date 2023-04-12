@@ -477,11 +477,11 @@ of the image.)
 
 For a pixel column $$j$$, the pixel row $$i$$ is computed as
 
-$$i = h - 1 - \lfloor (y - y_{min}) \times ((y_{max} - y_{min}) / h) \rfloor$$
+$$i = h - 1 - \lfloor ((y - y_{min}) / (y_{max} - y_{min})) \times h \rfloor$$
 
 where
 
-$$y = f(x_{min} + j/w \times (x_{max} - x_{min}))$$
+$$y = f(x_{min} + (j/w) \times (x_{max} - x_{min}))$$
 
 Note that your program should find the floor of a floating point value
 by calling [the `floor` function](https://linux.die.net/man/3/floor).
