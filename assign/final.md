@@ -485,7 +485,6 @@ $$y = f(x_{min} + (j/w) \times (x_{max} - x_{min}))$$
 
 Note that your program should find the floor of a floating point value
 by calling [the `floor` function](https://linux.die.net/man/3/floor).
-(You should `#include <cmath>` in order to use this function.)
 
 *Color blending.* When coloring a pixel for a fill operation, the resulting
 pixel color is blended from the original pixel color and the fill color,
