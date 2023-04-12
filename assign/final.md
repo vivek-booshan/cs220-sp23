@@ -435,6 +435,7 @@ In the formulas shown below,
 * $$w$$ is the *width* value from the `Plot` directive (number of columns of pixels)
 * $$h$$ is the *height* value from the `Plot` directive (number of rows of pixels)
 * $$f$$ is a function (given a value $$x$$, compute a corresponding value $$y$$)
+  from the `Function` directive specifying the function being plotted
 
 *Fill operations.* When rendering fill operations, each pixel represents a specific point
 in the x/y coordinate plane. For the pixel at row $$i$$ and column $$j$$,
@@ -452,7 +453,8 @@ $$y_{i} = y_{min} + (h-1-i)/h \times (y_{max}-y_{min})$$
 
 By determining the precise x/y coordinates of a pixel, you can determine
 whether that point is above/below/between a function or functions,
-in order to determine whether or not the pixel should be colored.
+in order to determine whether or not the pixel should be colored
+as part of the fill.
 
 *Function plots.* When rendering function plots, for each pixel column $$j$$ in the image,
 your program should determine a corresponding pixel row $$i$$ where the
@@ -461,13 +463,19 @@ as the pixels above/below/left/right, using the color associated with the functi
 (Note that some or all of these pixel locations could be be outside the bounds
 of the image.)
 
-For a pixel column $$j$$, the pixel row $$i$$ is computed as (TODO)
+For a pixel column $$j$$, the pixel row $$i$$ is computed as
 
-$$h - 1 - \lfloor y \rfloor$$
+$$i = h - 1 - \lfloor (y - y_{min}) \times ((y_{max} - y_{min}) / h) \rfloor$$
 
 where
 
 $$y = f(x_{min} + j/w \times (x_{max} - x_{min}))$$
+
+Note that your program should find the floor of a floating point value
+by calling the `floor` function. (You should `#include <cmath>`
+in order to use this function.)
+
+*Color blending.* TODO
 
 ## Design and implementation notes
 
