@@ -472,10 +472,28 @@ where
 $$y = f(x_{min} + j/w \times (x_{max} - x_{min}))$$
 
 Note that your program should find the floor of a floating point value
-by calling the `floor` function. (You should `#include <cmath>`
-in order to use this function.)
+by calling [the `floor` function](https://linux.die.net/man/3/floor).
+(You should `#include <cmath>` in order to use this function.)
 
-*Color blending.* TODO
+*Color blending.* When coloring a pixel for a fill operation, the resulting
+pixel color is blended from the original pixel color and the fill color,
+using the opacity value to determine the contributions of the components of
+the two colors being blended.
+
+The color component values of the resulting color should be determined
+using the formula
+
+$$c_{blend} = \lfloor (1 - \alpha) \times c_{orig} + \alpha \times c_{fill} \rfloor$$
+
+where
+
+* $$c_{blend}$$ is the blended color component value
+* $$c_{orig}$$ is the color component value of the original pixel
+* $$c_{fill}$$ is the color component value of the fill color
+* $$\alpha$$ is the opacity value
+
+The computation should be done for each color component (red, green, blue)
+in order to fully determine the blended result color.
 
 ## Design and implementation notes
 
