@@ -630,6 +630,57 @@ the materials for that week.
   </tbody>
 </table>
 </div>
+<button type="button" id="week_13_toggle" class="week_control_button">Week 13 (24-Apr to 28-Apr)</button>
+<div id="week_13" class="collapsible">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Day 37 (24-Apr)</th>
+      <th>Day 38 (26-Apr)</th>
+      <th>Day 39 (28-Apr)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Videos</td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=737a8372-4317-47c5-8492-ae23002795c1&query=iterator'>Iterators</a></td>
+      <td><a class='external' target='_blank' href='https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5eb3773f-b093-4630-8e18-ae810038ea47'>Lambdas</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Slides</td>
+      <td><a href='slides/day36_iterators.pdf'>Iterators</a></td>
+      <td><a href='slides/day37_lambdas.pdf'>Lambdas</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recap<br>Questions</td>
+      <td><a href='questions/day36.html'>Day 36</a></td>
+      <td><a href='questions/day37.html'>Day 37</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Exercise</td>
+      <td><a href='exercise/ex36.html'>Exercise 36</a></td>
+      <td>Work on final project</td>
+      <td>Work on final project</td>
+    </tr>
+    <tr>
+      <td>Additional<br>Resources</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lecture<br>Slides</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 <script type="text/javascript">
   // Create and register a click handler for button clicks to expand/contract
   // specified content div
