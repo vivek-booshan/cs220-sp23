@@ -46,6 +46,8 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **April 13** — The [Final Project](assign/final.html) is due **Friday, April 28th**
+  by 11 pm.
 * **April 6th** — [Homework 7](assign/hw7.html) is due **Friday, April 14th** by 11pm.
 * **March 31** — [Homework 6](assign/hw6.html) is due **Friday, April 7th** by 11pm.
 * **March 17** — [Homework 5](assign/hw5.html) is due **Friday, March 31st** by 11pm.
