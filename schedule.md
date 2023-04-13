@@ -23,5 +23,5 @@ Midterm exam | Friday, March 10th (in class)
 [Homework 5](assign/hw5.html) | Due Friday, Mar 31st
 Homework 6 | Due Friday, Apr 7th<br>(no late submissions)
 [Homework 7](assign/hw7.html) | Due Friday, 14th
-Final project | Due Friday, Apr 28th
+[Final project](assign/final.html) | Due Friday, Apr 28th
 Final exam | Thursday, May 11th at 2pm<br>(location TBD)
