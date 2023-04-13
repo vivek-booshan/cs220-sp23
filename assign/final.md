@@ -84,14 +84,14 @@ The detailed semantics of the various directives are described below.
 
 To get started on the project, use `git clone` to clone the final project
 repository we have created for you. Also, use `git pull` to make sure that
-your clone of the `cs220-summer22-public` repository is up to date.
+your clone of the `cs220-sp23-public` repository is up to date.
 Then, copy the starter files into your final project repository.
 Assuming your current directory is your clone of your team's final project
 repository, you could use the following commands to copy the files:
 
 ```
-cp -r ~/cs220-summer22-public/projects/final/* .
-cp ~/cs220-summer22-public/projects/final/.gitignore .
+cp -r ~/cs220-sp23-public/projects/final/* .
+cp ~/cs220-sp23-public/projects/final/.gitignore .
 ```
 
 Once you have copied the starter files, use `git add`, `git commit`,
@@ -119,7 +119,7 @@ on Gradescope individually.
 
 The `Makefile` should produce an executable called `plot`. As always,
 we expect your code to compile without warnings with the compiler
-options `-std=c++11 -Wall -Wextra -pedantic`. You can use the provided
+options `-std=c++14 -Wall -Wextra -pedantic`. You can use the provided
 `Makefile`, although if you want to write your own, or modify the
 provided one, you can.
 
@@ -435,6 +435,19 @@ In the formulas shown below,
 * $$w$$ is the *width* value from the `Plot` directive (number of columns of pixels)
 * $$h$$ is the *height* value from the `Plot` directive (number of rows of pixels)
 * $$f$$ is a function (given a value $$x$$, compute a corresponding value $$y$$)
+  from the `Function` directive specifying the function being plotted
+
+<div class="admonition caution">
+  <div class='title'>Caution</div>
+  <div class='content'>
+   <p>
+   In implementing code to perform these computations, be careful to
+   avoid integer division. Each computation involving a division
+   should be performed as a <i>floating point</i> division
+   (e.g., using <code class='highlighter-rouge'>double</code> values.)
+   </p>
+  </div>
+</div>
 
 *Fill operations.* When rendering fill operations, each pixel represents a specific point
 in the x/y coordinate plane. For the pixel at row $$i$$ and column $$j$$,
@@ -444,15 +457,16 @@ $$(x_{j}, y_{i})$$
 
 where
 
-$$x_{j} = x_{min} + j/w \times (x_{max}-x_{min})$$
+$$x_{j} = x_{min} + (j/w) \times (x_{max}-x_{min})$$
 
 and
 
-$$y_{i} = y_{min} + (h-1-i)/h \times (y_{max}-y_{min})$$
+$$y_{i} = y_{min} + ((h-1-i)/h) \times (y_{max}-y_{min})$$
 
 By determining the precise x/y coordinates of a pixel, you can determine
 whether that point is above/below/between a function or functions,
-in order to determine whether or not the pixel should be colored.
+in order to determine whether or not the pixel should be colored
+as part of the fill.
 
 *Function plots.* When rendering function plots, for each pixel column $$j$$ in the image,
 your program should determine a corresponding pixel row $$i$$ where the
@@ -461,13 +475,36 @@ as the pixels above/below/left/right, using the color associated with the functi
 (Note that some or all of these pixel locations could be be outside the bounds
 of the image.)
 
-For a pixel column $$j$$, the pixel row $$i$$ is computed as (TODO)
+For a pixel column $$j$$, the pixel row $$i$$ is computed as
 
-$$h - 1 - \lfloor y \rfloor$$
+$$i = h - 1 - \lfloor ((y - y_{min}) / (y_{max} - y_{min})) \times h \rfloor$$
 
 where
 
-$$y = f(x_{min} + j/w \times (x_{max} - x_{min}))$$
+$$y = f(x_{min} + (j/w) \times (x_{max} - x_{min}))$$
+
+Note that your program should find the floor of a floating point value
+by calling [the `floor` function](https://linux.die.net/man/3/floor).
+
+*Color blending.* When coloring a pixel for a fill operation, the resulting
+pixel color is blended from the original pixel color and the fill color,
+using the opacity value to determine the contributions of the components of
+the two colors being blended.
+
+The color component values of the resulting color should be determined
+using the formula
+
+$$c_{blend} = \lfloor (1 - \alpha) \times c_{orig} + \alpha \times c_{fill} \rfloor$$
+
+where
+
+* $$c_{blend}$$ is the blended color component value
+* $$c_{orig}$$ is the color component value of the original pixel
+* $$c_{fill}$$ is the color component value of the fill color
+* $$\alpha$$ is the opacity value
+
+The computation should be done for each color component (red, green, blue)
+in order to fully determine the blended result color.
 
 ## Design and implementation notes
 
