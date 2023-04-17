@@ -4,10 +4,6 @@ layout: mathjax
 title: "Final Project"
 ---
 
-<div style="font-size: 120%; font-style: italic; text-align: center;">
-Preliminary assignment description, not official yet
-</div>
-
 <div class='admonition caution'>
 <div class='title'>Caution</div>
 <div class='content'>
