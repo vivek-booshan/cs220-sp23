@@ -656,13 +656,13 @@ the materials for that week.
     </tr>
     <tr>
       <td>Recap<br>Questions</td>
-      <td><a href='questions/day36.html'>Day 36</a></td>
       <td><a href='questions/day37.html'>Day 37</a></td>
+      <td><a href='questions/day38.html'>Day 38</a></td>
       <td></td>
     </tr>
     <tr>
       <td>Exercise</td>
-      <td><a href='exercise/ex36.html'>Exercise 36</a></td>
+      <td><a href='exercise/ex37.html'>Exercise 37</a></td>
       <td>Work on final project</td>
       <td>Work on final project</td>
     </tr>
