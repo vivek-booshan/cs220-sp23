@@ -707,7 +707,7 @@ Your `README` must include:
 
 * A section titled ‘TEAM’ which lists each team participant’s name and JHED id
 * A section titled ‘DESIGN’ which gives a brief explanation of overall
-  design, including how you approached the `point_value` implementation
+  design
 * A section titled ‘COMPLETENESS’ which indicates how complete your
   solution is (i.e. are you aware of any missing/incorrect functionality?).
 * An optional section titled ‘SPECIAL INSTRUCTIONS’ which indicates
