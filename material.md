@@ -674,7 +674,7 @@ the materials for that week.
     </tr>
     <tr>
       <td>Lecture<br>Slides</td>
-      <td></td>
+      <td><a href='slides/notes/sp23_day37_sec03.pdf'>Day 37 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day37_sec04.pdf'>Day 37 Notes (Sec 04)</a></td>
       <td></td>
       <td></td>
     </tr>
@@ -710,7 +710,7 @@ the materials for that week.
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    var active_week_id = 'week_12';
+    var active_week_id = 'week_13';
 
     var content_divs = document.getElementsByClassName("collapsible");
     for (i = 0; i < content_divs.length; i++) {
