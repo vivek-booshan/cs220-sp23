@@ -46,6 +46,14 @@ to the course Gradescope in the first week.
 
 ## News
 
+* **April 25** — The Final Exam will take place **Thursday, May 11th** at **2pm**
+  in Mudd 26. Review materials are available on the [Resources page](resources.html).
+  The final exam will be completed on Gradescope, and will be similar in format
+  to the midterm exam. However, the only resources your will be allowed to use are
+  (1) the course website (and resources linked directly from the course website)
+  and (2) a terminal to log into your ugrad account (to use a text editor, compiler, etc.).
+  Using VS Code will **not** be allowed.  Using ChatGPT or similar tools is not allowed,
+  and will be considered to be cheating.
 * **April 13** — The [Final Project](assign/final.html) is due **Friday, April 28th**
   by 11 pm.
 * **April 6th** — [Homework 7](assign/hw7.html) is due **Friday, April 14th** by 11pm.
