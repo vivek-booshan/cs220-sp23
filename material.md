@@ -574,7 +574,7 @@ the materials for that week.
       <td>Lecture<br>Slides</td>
       <td><a href='slides/notes/sp23_day31_sec03.pdf'>Day 31 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day31_sec04.pdf'>Day 31 Notes (Sec 04)</a></td>
       <td><a href='slides/notes/sp23_day32_sec03.pdf'>Day 32 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day32_sec04.pdf'>Day 32 Notes (Sec 04)</a></td>
-      <td></td>
+      <td><a href='slides/notes/sp23_day33_sec03.pdf'>Day 33 Notes (Sec 03)</a><br><a href='slides/notes/sp23_day33_sec04.pdf'>Day 33 Notes (Sec 04)</a></td>
     </tr>
   </tbody>
 </table>
